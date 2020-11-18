@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: no
+  roles:
+    - gitcontrol
+  environment:
+    github_user: "{{ lookup('env', 'GITHUB_USER') }}"
+    github_token: "{{ lookup('env', 'GITHUB_TOKEN') }}"
