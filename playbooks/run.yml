@@ -1,5 +1,16 @@
 ---
-- hosts: localhost
+
+- name: Prepare github config
+  hosts: localhost
+  tasks:
+    - name: Load orgs
+      script: files/scan.py
+      args:
+        executable: python3
+      register: out
+
+- name: Manage orgs
+  hosts: localhost
   gather_facts: no
   roles:
     - gitcontrol
