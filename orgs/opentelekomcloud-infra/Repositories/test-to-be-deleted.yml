@@ -10,26 +10,31 @@ test-to-be-deleted:
   github_repo_private: true
   users:
     Read:
-      - lego963
     Triage:
     Write:
+      - anton-sidelnikov
+      - lego963
     Maintain:
     Admin:
-      - "anton-sidelnikov"
-      - "otc-zuul"
+      - anton-sidelnikov
+      - otc-zuul
   protection_rules:
     master:
       reviews: 1
       dismiss_stale: true
       review_from_code_owners: false
       who_can_dismiss_pr_reviews:
-        - "anton-sidelnikov"
+        - anton-sidelnikov
       require_status_check: false
       require_branches_up_before_merge: false
       require_signed_commits: false
       require_linear_history: false
       include_administrators: true
       restrict_who_can_push_to_match_br:
-        - lego963
+        - otc-zuul
       allow_force_pushes: false
       allow_deletions: false
+  options:
+    allow_merge_commits: false
+    allow_squash_merging: true
+    allow_rebase_merging : false
