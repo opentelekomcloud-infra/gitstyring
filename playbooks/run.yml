@@ -3,11 +3,13 @@
 - name: Prepare github config
   hosts: localhost
   tasks:
-    - name: Load orgs
-      script: files/scan.py
-      args:
-        executable: python3
-      register: out
+    - name: Gather orgs info
+      scan_organizations:
+      register: structure
+
+    - name: Register
+      set_fact:
+        orgs: "{{ structure }}"
 
 - name: Manage orgs
   hosts: localhost

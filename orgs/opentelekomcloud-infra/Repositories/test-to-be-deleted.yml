@@ -16,6 +16,7 @@ test-to-be-deleted:
     Maintain:
     Admin:
       - "anton-sidelnikov"
+      - "otc-zuul"
   protection_rules:
     master:
       reviews: 1
