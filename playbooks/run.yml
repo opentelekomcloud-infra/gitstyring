@@ -5,17 +5,19 @@
   tasks:
     - name: Gather orgs info
       scan_organizations:
-      register: structure
+      register: out
 
-    - name: Register
+    - name: Register orgs structure
       set_fact:
-        orgs: "{{ structure }}"
+        structure: "{{ out }}"
 
 - name: Manage orgs
   hosts: localhost
   gather_facts: no
   roles:
     - gitcontrol
-  environment:
+  vars:
+    orgs: "{{ structure.data }}"
     github_user: "{{ lookup('env', 'GITHUB_USER') }}"
     github_token: "{{ lookup('env', 'GITHUB_TOKEN') }}"
+    github_api: https://api.github.com

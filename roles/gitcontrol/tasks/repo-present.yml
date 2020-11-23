@@ -1,0 +1,25 @@
+---
+- name: "Check whether {{ org.key }} organization has listed repositories exists"
+  uri:
+    headers:
+      Authorization: "token {{ github_token }}"
+    status_code:
+      - 200
+      - 404
+    url: "{{ github_api }}/repos/{{ org.key }}/{{ repo.key }}"
+  when: "'repositories' in org.value"
+  loop_control:
+    loop_var: repo
+  with_dict: "{{ org.value.repositories }}"
+  register: response
+
+#- name: "Create new {{ repo.key }} repository"
+#  when: response.status == 404
+#  uri:
+#    body: "{{ repo.value | combine({ 'name': repo.key }) | to_json }}"
+#    body_format: json
+#    headers:
+#      Authorization: "token {{ github_token }}"
+#    method: POST
+#    status_code: 201
+#    url: '{{ github_api }}/orgs/{{ org.key }}/repos'
