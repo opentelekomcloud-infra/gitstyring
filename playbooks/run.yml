@@ -5,6 +5,7 @@
   tasks:
     - name: Gather orgs info
       scan_organizations:
+        path: "../orgs"
       register: out
 
     - name: Register orgs structure
