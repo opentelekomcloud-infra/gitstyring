@@ -13,13 +13,17 @@
   with_dict: "{{ org.value.repositories }}"
   register: response
 
-#- name: "Create new {{ repo.key }} repository"
-#  when: response.status == 404
-#  uri:
-#    body: "{{ repo.value | combine({ 'name': repo.key }) | to_json }}"
-#    body_format: json
-#    headers:
-#      Authorization: "token {{ github_token }}"
-#    method: POST
-#    status_code: 201
-#    url: '{{ github_api }}/orgs/{{ org.key }}/repos'
+- name: Update repository base options
+  when: resp.status == 200 and resp is defined
+  uri:
+    body: "{{ resp.repo.value | combine({ 'name': resp.repo.key }) | to_json }}"
+    body_format: json
+    headers:
+      Authorization: "token {{ github_token }}"
+    method: PATCH
+    url: "{{ github_api }}/repos/{{ org.key }}/{{ resp.repo.key }}"
+  loop_control:
+    loop_var: resp
+  with_items: "{{ response.results }}"
+  # just continue in case of an archived repo
+  ignore_errors: "{{ resp.repo.value.archived | default(false) | bool }}"

@@ -1,21 +1,24 @@
 test-to-be-deleted:
   default_branch: master
   description: Test Repo for Github Management Tool
-  homepage:
+  homepage: null
   language: Python
-  github_repo_archived: false
-  github_repo_has_issues: true
-  github_repo_has_projects: true
-  github_repo_has_wiki: true
-  github_repo_private: true
-  users:
-    Read:
-    Triage:
-    Write:
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  private: false
+  delete_branch_on_merge: false
+  allow_merge_commit: true
+  allow_squash_merge: true
+  allow_rebase_merge : true
+  collaborators:
+    maintain:
+    pull:
       - anton-sidelnikov
       - lego963
-    Maintain:
-    Admin:
+    push:
+    admin:
       - anton-sidelnikov
       - otc-zuul
   protection_rules:
@@ -34,7 +37,3 @@ test-to-be-deleted:
         - otc-zuul
       allow_force_pushes: false
       allow_deletions: false
-  options:
-    allow_merge_commits: false
-    allow_squash_merging: true
-    allow_rebase_merging : false
