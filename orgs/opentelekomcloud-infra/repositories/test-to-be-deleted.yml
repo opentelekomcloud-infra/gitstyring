@@ -15,7 +15,6 @@ test-to-be-deleted:
   collaborators:
     maintain:
     pull:
-      - anton-sidelnikov
       - lego963
     push:
     admin:
