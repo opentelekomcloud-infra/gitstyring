@@ -32,7 +32,7 @@
 
   - name: Update repository collaborators
     when: resp.status == 200
-    script: "github_api.py --endpoint manage_collaborators --org {{ org.key }} --repo {{ resp.repo.key }} --root {{ root_dir }}"
+    script: "github_api.py --endpoint manage_collaborators --github_api_url {{ github_api }} --org {{ org.key }} --repo {{ resp.repo.key }} --root {{ root_dir }}"
     args:
       executable: python3
     loop_control:
