@@ -22,17 +22,25 @@ test-to-be-deleted:
       - otc-zuul
   protection_rules:
     master:
-      reviews: 1
-      dismiss_stale: true
-      review_from_code_owners: false
-      who_can_dismiss_pr_reviews:
-        - anton-sidelnikov
-      require_status_check: false
-      require_branches_up_before_merge: false
-      require_signed_commits: false
-      require_linear_history: false
-      include_administrators: true
-      restrict_who_can_push_to_match_br:
-        - otc-zuul
+      required_status_checks:
+        strict: false
+        contexts:
+          - eco/check
+      enforce_admins: true,
+      required_pull_request_reviews:
+        dismissal_restrictions:
+          users:
+            - anton-sidelnikov
+          teams:
+            - opentelekomcloud-infra/csm
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: false
+        required_approving_review_count: 1
+      restrictions:
+        users:
+        teams:
+        apps:
+          - otc-zuul
+      required_linear_history: false
       allow_force_pushes: false
       allow_deletions: false

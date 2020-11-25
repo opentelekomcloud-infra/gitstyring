@@ -35,6 +35,8 @@ def manage_collaborators(owner, repo_name, repo):
                     output += f'user {user} not created: {res.status_code}'
     return output
 
+def update_branch_protection():
+    return
 
 if __name__ == '__main__':
     args_parser = ArgumentParser(prog="github_api", description="Multi-purpose github api script")
@@ -49,3 +51,5 @@ if __name__ == '__main__':
             repo_name=args.repo,
             repo=read_yaml_file(path=args.root, org=args.org, repo_name=args.repo, endpoint=args.endpoint)
         )
+    if args.endpoint == "branch_protection":
+        update_branch_protection()
