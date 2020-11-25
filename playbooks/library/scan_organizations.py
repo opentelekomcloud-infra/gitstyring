@@ -7,9 +7,14 @@ from ansible.module_utils.basic import *
 
 
 def main():
-    module = AnsibleModule(argument_spec={})
+    module = AnsibleModule(
+        argument_spec=dict(
+            path=dict(type='str', required=True)
+        )
+    )
+
     output = {}
-    for root, dirs, files in os.walk("../orgs"):
+    for root, dirs, files in os.walk(module.params['path']):
         for file in files:
             current_root = os.path.basename(root)
             a_yaml_file = open(os.path.join(root, file))
