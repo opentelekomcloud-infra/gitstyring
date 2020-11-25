@@ -13,17 +13,30 @@
   with_dict: "{{ org.value.repositories }}"
   register: response
 
-- name: Update repository base options
-  when: resp.status == 200 and resp is defined
-  uri:
-    body: "{{ resp.repo.value | combine({ 'name': resp.repo.key }) | to_json }}"
-    body_format: json
-    headers:
-      Authorization: "token {{ github_token }}"
-    method: PATCH
-    url: "{{ github_api }}/repos/{{ org.key }}/{{ resp.repo.key }}"
-  loop_control:
-    loop_var: resp
-  with_items: "{{ response.results }}"
-  # just continue in case of an archived repo
-  ignore_errors: "{{ resp.repo.value.archived | default(false) | bool }}"
+- name: Update exists repositories
+  block:
+  - name: Update repository base options
+    when: resp.status == 200
+    uri:
+      body: "{{ resp.repo.value | combine({ 'name': resp.repo.key }) | to_json }}"
+      body_format: json
+      headers:
+        Authorization: "token {{ github_token }}"
+      method: PATCH
+      url: "{{ github_api }}/repos/{{ org.key }}/{{ resp.repo.key }}"
+    loop_control:
+      loop_var: resp
+    with_items: "{{ response.results }}"
+    # just continue in case of an archived repo
+    ignore_errors: "{{ resp.repo.value.archived | default(false) | bool }}"
+
+  - name: Update repository collaborators
+    when: resp.status == 200
+    script: "github_api.py --endpoint manage_collaborators --org {{ org.key }} --repo {{ resp.repo.key }} --root {{ root_dir }}"
+    args:
+      executable: python3
+    loop_control:
+      loop_var: resp
+    with_items: "{{ response.results }}"
+    register: failed_users
+  when: "'results' in response"

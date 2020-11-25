@@ -3,76 +3,37 @@ import os
 from argparse import ArgumentParser
 
 import requests as requests
+import yaml
 
 github_user = os.getenv('GITHUB_USER')
 github_token = os.getenv('GITHUB_TOKEN')
 github_api = "https://api.github.com"
 headers = {'Authorization': f'token {github_token}'}
-
-test_data = {
-    "key": "test-to-be-deleted",
-    "value": {
-        "allow_merge_commit": True,
-        "allow_rebase_merge": True,
-        "allow_squash_merge": True,
-        "archived": False,
-        "collaborators": {
-            "admin": [
-                "anton-sidelnikov",
-                "otc-zuul"
-            ],
-            "maintain": None,
-            "pull": [
-                "lego963"
-            ],
-            "push": None
-        },
-        "default_branch": "master",
-        "delete_branch_on_merge": False,
-        "description": "Test Repo for Github Management Tool",
-        "has_issues": True,
-        "has_projects": True,
-        "has_wiki": True,
-        "homepage": None,
-        "language": "Python",
-        "private": False,
-        "protection_rules": {
-            "master": {
-                "allow_deletions": False,
-                "allow_force_pushes": False,
-                "dismiss_stale": True,
-                "include_administrators": True,
-                "require_branches_up_before_merge": False,
-                "require_linear_history": False,
-                "require_signed_commits": False,
-                "require_status_check": False,
-                "restrict_who_can_push_to_match_br": [
-                    "otc-zuul"
-                ],
-                "review_from_code_owners": False,
-                "reviews": 1,
-                "who_can_dismiss_pr_reviews": [
-                    "anton-sidelnikov"
-                ]
-            }
-        }
-    }
-}
+bad_statuses = [400, 404]
 
 
-def manage_collaborators(owner, repo):
-    collaborators = repo['value']['collaborators']
+def read_yaml_file(path, org, endpoint, repo_name=None):
+    if endpoint == "manage_collaborators":
+        path += f'/{org}/repositories/{repo_name}.yml'
+    with open(path, 'r') as file:
+        data = yaml.load(file)
+    return data
+
+
+def manage_collaborators(owner, repo_name, repo):
+    output = ''
+    collaborators = repo[repo_name]['collaborators']
     for clb in collaborators:
         if collaborators[clb]:
             for user in collaborators[clb]:
-                username = user
-                permission = {'permission': clb}
                 res = requests.put(
-                    f"{github_api}/repos/{owner}/{repo['key']}/collaborators/{username}?",
-                    json=permission,
+                    f"{github_api}/repos/{owner}/{repo_name}/collaborators/{user}?",
+                    json={'permission': clb},
                     headers=headers,
                     timeout=15)
-    return print("OK")
+                if res.status_code in bad_statuses:
+                    output += f'user {user} not created: {res.status_code}'
+    return output
 
 
 if __name__ == '__main__':
@@ -80,6 +41,11 @@ if __name__ == '__main__':
     args_parser.add_argument("--endpoint", help="Selected github endpoint")
     args_parser.add_argument("--org", help="Repo owner")
     args_parser.add_argument("--repo", help="Repo data")
+    args_parser.add_argument("--root", help="Root directory to fetch files")
     args = args_parser.parse_args()
     if args.endpoint == "manage_collaborators":
-        manage_collaborators(args.org, test_data)
+        manage_collaborators(
+            owner=args.org,
+            repo_name=args.repo,
+            repo=read_yaml_file(path=args.root, org=args.org, repo_name=args.repo, endpoint=args.endpoint)
+        )

@@ -1,11 +1,17 @@
 ---
+- name: Prepare github config
+  hosts: localhost
+  tasks:
+    - name: Register root dir
+      set_fact:
+        root_dir: "../orgs"
 
 - name: Prepare github config
   hosts: localhost
   tasks:
     - name: Gather orgs info
       scan_organizations:
-        path: "../orgs"
+        path: "{{ root_dir }}"
       register: out
 
     - name: Register orgs structure
