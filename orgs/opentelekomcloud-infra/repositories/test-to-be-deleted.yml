@@ -21,7 +21,7 @@ test-to-be-deleted:
       - anton-sidelnikov
       - otc-zuul
   protection_rules:
-    master:
+    main:
       required_status_checks:
         strict: false
         contexts:
