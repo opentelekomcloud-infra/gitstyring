@@ -1,21 +1,30 @@
 ---
+- name: Prepare github config
+  hosts: localhost
+  tasks:
+    - name: Register root dir
+      set_fact:
+        root_dir: "../orgs"
 
 - name: Prepare github config
   hosts: localhost
   tasks:
     - name: Gather orgs info
       scan_organizations:
-      register: structure
+        path: "{{ root_dir }}"
+      register: out
 
-    - name: Register
+    - name: Register orgs structure
       set_fact:
-        orgs: "{{ structure }}"
+        structure: "{{ out }}"
 
 - name: Manage orgs
   hosts: localhost
   gather_facts: no
   roles:
     - gitcontrol
-  environment:
+  vars:
+    orgs: "{{ structure.data }}"
     github_user: "{{ lookup('env', 'GITHUB_USER') }}"
     github_token: "{{ lookup('env', 'GITHUB_TOKEN') }}"
+    github_api: https://api.github.com
