@@ -39,6 +39,7 @@ def update_options(github_api, owner, repo_name, repo):
 def manage_collaborators(github_api, owner, repo_name, repo):
     output = ''
     collaborators = repo[repo_name]['collaborators']
+    teams = repo[repo_name]['teams']
     for clb in collaborators:
         if collaborators[clb]:
             for user in collaborators[clb]:
@@ -49,6 +50,16 @@ def manage_collaborators(github_api, owner, repo_name, repo):
                     timeout=15)
                 if res.status_code in bad_statuses:
                     output += f'user {user} not created: {res.status_code}, error is: {res.text}\n'
+    for team in teams:
+        if teams[team]:
+            for team_name in teams[team]:
+                res = requests.put(
+                    f'{github_api}/orgs/{owner}/teams/{team_name}/repos/{owner}/{repo_name}',
+                    json={'permission': team},
+                    headers=headers,
+                    timeout=15)
+                if res.status_code in bad_statuses:
+                    output += f'repo not added to team: {team}: {res.status_code}, error is: {res.text}\n'
     return print(output)
 
 
