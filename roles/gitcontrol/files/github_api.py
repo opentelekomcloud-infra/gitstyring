@@ -25,7 +25,7 @@ def read_yaml_file(path, org, endpoint, repo_name=None):
 def update_options(github_api, owner, repo_name, repo):
     output = ''
     options = repo[repo_name]
-    options.update({'name':  repo_name})
+    options.update({'name': repo_name})
     res = requests.patch(
         f'{github_api}/repos/{owner}/{repo_name}',
         json=options,
