@@ -35,7 +35,7 @@
     with_items: "{{ response.results }}"
     register: failed_users
 
-  - name: Update branch protection rules for branch
+  - name: Update branch protection rules for repo
     when: resp.status == 200
     script: "github_api.py --endpoint branch_protection --org {{ org.key }} --repo {{ resp.repo.key }}"
     args:
