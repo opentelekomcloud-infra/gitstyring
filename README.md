@@ -1,9 +1,8 @@
 # Gitstyring
 Github management by Ansible.
 
-# With Ansible Role: Gitcontrol
-
-Manage your organization repositories(later will add other stuff) at Github:
+# Ansible Role: Gitcontrol
+Manage your organization repositories(**later will add other stuff**) at Github:
 
 ## Structure
 Describe all your organizations in `orgs/{{ structure_name }}/`,
@@ -44,29 +43,21 @@ my_repo:
   allow_rebase_merge : false
   teams:
     maintain:
-    ## List of teams who can only read this repo.
-    pull:
-    ## List of teams with push access.
-    push:
-    ## List of admin teams.  Any member of an admin team will have admin access to this repo.
-    admin:
+    pull: # List of teams who can only read this repo.
+    push: # List of teams with push access.
+    admin: # List of admin teams.
       - csm
   collaborators:
     maintain:
-    ## List of members who can only read this repo.
-    pull:
-    ## List of members with push access.
-    push:
-    ## List of admin members.  Any member of an admin members will have admin access to this repo.
-    admin:
+    pull: # List of members who can only read this repo.
+    push: # List of members with push access.
+    admin:  # List of admin members.
       - anton-sidelnikov
-  # do not change protection rules structure all fields is required
-  protection_rules:
+  protection_rules: # do not change protection rules structure all fields is required
     main: # branch name which already created in branch protection rules
       required_status_checks:
         strict: true / false
-        ## The list of status checks to require in order to merge into this branch
-        contexts:
+        contexts: # The list of status checks to require in order to merge into this branch
           - eco/check
       enforce_admins: true
       required_pull_request_reviews:
@@ -79,8 +70,7 @@ my_repo:
       restrictions:
         users: [] # list of members or empty list
         teams: [] # list of teams or empty list
-        # list of app slugs with push access
-        apps:
+        apps: # list of app slugs with push access
           - otc-zuul
       required_linear_history: false
       allow_force_pushes: false

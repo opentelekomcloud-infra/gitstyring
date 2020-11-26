@@ -17,7 +17,7 @@ gitstyring:
     pull:
     push:
     admin:
-      - csm
+      - eco
   collaborators:
     maintain:
     pull:

@@ -17,7 +17,7 @@ test-to-be-deleted:
     pull:
     push:
     admin:
-      - csm
+      - eco
   collaborators:
     maintain:
     pull:
