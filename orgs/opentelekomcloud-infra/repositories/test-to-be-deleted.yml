@@ -21,24 +21,22 @@ test-to-be-deleted:
       - anton-sidelnikov
       - otc-zuul
   protection_rules:
-    main:
+    master:
       required_status_checks:
         strict: false
         contexts:
           - eco/check
-      enforce_admins: true,
+      enforce_admins: true
       required_pull_request_reviews:
         dismissal_restrictions:
-          users:
-            - anton-sidelnikov
-          teams:
-            - opentelekomcloud-infra/csm
+          users: []
+          teams: []
         dismiss_stale_reviews: true
         require_code_owner_reviews: false
         required_approving_review_count: 1
       restrictions:
-        users:
-        teams:
+        users: []
+        teams: []
         apps:
           - otc-zuul
       required_linear_history: false

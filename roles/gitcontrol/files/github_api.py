@@ -7,16 +7,33 @@ import yaml
 
 github_user = os.getenv('GITHUB_USER')
 github_token = os.getenv('GITHUB_TOKEN')
-headers = {'Authorization': f'token {github_token}'}
-bad_statuses = [400, 404]
+headers = {
+    'Authorization': f'token {github_token}',
+    'Accept': 'application/vnd.github.luke-cage-preview+json'
+}
+bad_statuses = [400, 403, 404, 422]
 
 
 def read_yaml_file(path, org, endpoint, repo_name=None):
-    if endpoint == 'manage_collaborators':
+    if endpoint in ['manage_collaborators', 'branch_protection', 'options']:
         path += f'/{org}/repositories/{repo_name}.yml'
     with open(path, 'r') as file:
-        data = yaml.load(file)
+        data = yaml.load(file, Loader=yaml.FullLoader)
     return data
+
+
+def update_options(github_api, owner, repo_name, repo):
+    output = ''
+    options = repo[repo_name]
+    options.update({'name':  repo_name})
+    res = requests.patch(
+        f'{github_api}/repos/{owner}/{repo_name}',
+        json=options,
+        headers=headers,
+        timeout=15)
+    if res.status_code in bad_statuses:
+        output += f'options change not applied: {res.status_code}, error is: {res.text}\n'
+    return print(output)
 
 
 def manage_collaborators(github_api, owner, repo_name, repo):
@@ -31,15 +48,27 @@ def manage_collaborators(github_api, owner, repo_name, repo):
                     headers=headers,
                     timeout=15)
                 if res.status_code in bad_statuses:
-                    output += f'user {user} not created: {res.status_code}'
-    return output
+                    output += f'user {user} not created: {res.status_code}, error is: {res.text}\n'
+    return print(output)
 
-def update_branch_protection():
-    return
+
+def update_branch_protection(github_api, owner, repo_name, repo):
+    output = ''
+    rules = repo[repo_name]['protection_rules']
+    branch_name = (list(rules.keys())[0])
+    res = requests.put(
+        f'{github_api}/repos/{owner}/{repo_name}/branches/{branch_name}/protection',
+        json=rules[branch_name],
+        headers=headers,
+        timeout=15)
+    if res.status_code in bad_statuses:
+        output += f'branch protection rule not applied: {res.status_code}, error is: {res.text}\n'
+    return print(output)
+
 
 if __name__ == '__main__':
     args_parser = ArgumentParser(prog='github_api', description='Multi-purpose github api script')
-    args_parser.add_argument('--github_api_url', help='Selected github endpoint')
+    args_parser.add_argument('--github_api_url', help='Github api base path', default='https://api.github.com')
     args_parser.add_argument('--endpoint', help='Selected github endpoint')
     args_parser.add_argument('--org', help='Repo owner')
     args_parser.add_argument('--repo', help='Repo data')
@@ -53,4 +82,16 @@ if __name__ == '__main__':
             repo=read_yaml_file(path=args.root, org=args.org, repo_name=args.repo, endpoint=args.endpoint)
         )
     if args.endpoint == 'branch_protection':
-        update_branch_protection()
+        update_branch_protection(
+            github_api=args.github_api_url,
+            owner=args.org,
+            repo_name=args.repo,
+            repo=read_yaml_file(path=args.root, org=args.org, repo_name=args.repo, endpoint=args.endpoint)
+        )
+    if args.endpoint == 'options':
+        update_options(
+            github_api=args.github_api_url,
+            owner=args.org,
+            repo_name=args.repo,
+            repo=read_yaml_file(path=args.root, org=args.org, repo_name=args.repo, endpoint=args.endpoint)
+        )
