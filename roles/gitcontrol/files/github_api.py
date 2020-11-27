@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import os
+import sys
 from argparse import ArgumentParser
 
 import requests as requests
@@ -33,7 +34,7 @@ def update_options(github_api, owner, repo_name, repo):
         timeout=15)
     if res.status_code in bad_statuses:
         output += f'options change not applied: {res.status_code}, error is: {res.text}\n'
-    return print(output)
+    return print(output, file=sys.stderr)
 
 
 def manage_collaborators(github_api, owner, repo_name, repo):
@@ -62,7 +63,7 @@ def manage_collaborators(github_api, owner, repo_name, repo):
                 timeout=15)
             if res.status_code in bad_statuses:
                 output += f'repo not added to team: {team}: {res.status_code}, error is: {res.text}\n'
-    return print(output)
+    return print(output, file=sys.stderr)
 
 
 def update_branch_protection(github_api, owner, repo_name, repo):
@@ -76,7 +77,7 @@ def update_branch_protection(github_api, owner, repo_name, repo):
         timeout=15)
     if res.status_code in bad_statuses:
         output += f'branch protection rule not applied: {res.status_code}, error is: {res.text}\n'
-    return print(output)
+    return print(output, file=sys.stderr)
 
 
 if __name__ == '__main__':
