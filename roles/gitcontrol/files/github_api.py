@@ -18,7 +18,7 @@ def read_yaml_file(path, org, endpoint, repo_name=None):
     if endpoint in ['manage_collaborators', 'branch_protection', 'options']:
         path += f'/{org}/repositories/{repo_name}.yml'
     with open(path, 'r') as file:
-        data = yaml.load(file, Loader=yaml.SafeLoader)
+        data = yaml.safe_load(file)
     return data
 
 
