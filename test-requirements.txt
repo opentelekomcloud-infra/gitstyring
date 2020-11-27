@@ -1,0 +1,4 @@
+pylint
+pylint-quotes
+pylint-exit==1.2.0
+flake8

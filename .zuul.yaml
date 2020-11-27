@@ -1,0 +1,15 @@
+---
+- project:
+    merge-mode: squash-merge
+    check:
+      jobs:
+        - otc-tox-py37
+        - otc-tox-py38
+        - tox-linters
+        - zuul-jobs-tox-linters
+    gate:
+      jobs:
+        - otc-tox-py37
+        - otc-tox-py38
+        - tox-linters
+        - zuul-jobs-tox-linters
