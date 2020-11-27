@@ -18,7 +18,7 @@ def read_yaml_file(path, org, endpoint, repo_name=None):
     if endpoint in ['manage_collaborators', 'branch_protection', 'options']:
         path += f'/{org}/repositories/{repo_name}.yml'
     with open(path, 'r') as file:
-        data = yaml.load(file, Loader=yaml.Loader)
+        data = yaml.load(file, Loader=yaml.SafeLoader)
     return data
 
 
@@ -40,26 +40,28 @@ def manage_collaborators(github_api, owner, repo_name, repo):
     output = ''
     collaborators = repo[repo_name]['collaborators']
     teams = repo[repo_name]['teams']
-    for key, val in collaborators.items():
-        if val:
-            for user in val:
-                res = requests.put(
-                    f'{github_api}/repos/{owner}/{repo_name}/collaborators/{user}',
-                    json={'permission': key},
-                    headers=headers,
-                    timeout=15)
-                if res.status_code in bad_statuses:
-                    output += f'user {user} not created: {res.status_code}, error is: {res.text}\n'
-    for key, val in teams.items():
-        if val:
-            for team in val:
-                res = requests.put(
-                    f'{github_api}/orgs/{owner}/teams/{team}/repos/{owner}/{repo_name}',
-                    json={'permission': key},
-                    headers=headers,
-                    timeout=15)
-                if res.status_code in bad_statuses:
-                    output += f'repo not added to team: {team}: {res.status_code}, error is: {res.text}\n'
+    for permission, users in collaborators.items():
+        if not users:
+            continue
+        for user in users:
+            res = requests.put(
+                f'{github_api}/repos/{owner}/{repo_name}/collaborators/{user}',
+                json={'permission': permission},
+                headers=headers,
+                timeout=15)
+            if res.status_code in bad_statuses:
+                output += f'user {user} not created: {res.status_code}, error is: {res.text}\n'
+    for permission, teams in teams.items():
+        if not teams:
+            continue
+        for team in teams:
+            res = requests.put(
+                f'{github_api}/orgs/{owner}/teams/{team}/repos/{owner}/{repo_name}',
+                json={'permission': permission},
+                headers=headers,
+                timeout=15)
+            if res.status_code in bad_statuses:
+                output += f'repo not added to team: {team}: {res.status_code}, error is: {res.text}\n'
     return print(output)
 
 

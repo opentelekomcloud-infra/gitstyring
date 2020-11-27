@@ -1,5 +1,5 @@
 # Gitstyring
-Github management by Ansible.
+Github management by Ansible via specific role.
 
 # Ansible Role: Gitcontrol
 Manage your organization repositories(**later will add other stuff**) at Github:
@@ -42,13 +42,13 @@ my_repo:
   allow_squash_merge: true
   allow_rebase_merge : false
   teams:
-    maintain:
+    maintain: # List of teams who need to manage the repository without access to sensitive or destructive actions.
     pull: # List of teams who can only read this repo.
     push: # List of teams with push access.
     admin: # List of admin teams.
       - csm
   collaborators:
-    maintain:
+    maintain: # List of members who need to manage the repository without access to sensitive or destructive actions.
     pull: # List of members who can only read this repo.
     push: # List of members with push access.
     admin:  # List of admin members.
@@ -81,12 +81,12 @@ my_repo:
 
 # How to use it
 
-Fistly:
+Firstly:
 - export GITHUB_TOKEN="github-token"
 - export GITHUB_USER="github-username"
 
 To apply changes in your organization repositories run:
 ```
-ansible-playbook playbooks/run.yml -e github_repos__state=present
+ansible-playbook playbooks/run.yml -e github_repos_state=present
 
 ```

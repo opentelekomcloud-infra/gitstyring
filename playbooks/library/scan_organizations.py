@@ -18,7 +18,7 @@ def main():
         for file in files:
             current_root = os.path.basename(root)
             a_yaml_file = open(os.path.join(root, file))
-            parsed_yaml_file = yaml.load(a_yaml_file, Loader=yaml.BaseLoader)
+            parsed_yaml_file = yaml.load(a_yaml_file, Loader=yaml.SafeLoader)
             parent = os.path.basename(os.path.abspath(os.path.join(root, os.pardir)))
             if parent in output:
                 if current_root in output[parent]:
