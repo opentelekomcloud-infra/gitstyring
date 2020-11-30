@@ -4,8 +4,8 @@
     check:
       jobs:
         - tox-linters
-        - zuul-jobs-tox-linters
+        # ansible-playbook tests/basic.yml -e github_repos_state=test
     gate:
       jobs:
         - tox-linters
-        - zuul-jobs-tox-linters
+        # ansible-playbook playbooks/run.yml -e github_repos_state=present
