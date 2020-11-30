@@ -5,7 +5,7 @@
       jobs:
         - tox-linters
         - job:
-            name: basic test build orgs data
+            name: basic test for checks orgs data
             run: tests/basic.yml
     gate:
       jobs:
