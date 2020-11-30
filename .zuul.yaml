@@ -4,7 +4,9 @@
     check:
       jobs:
         - tox-linters
-#        - ansible-playbook tests/basic.yml
+        - job:
+            name: basic test build orgs data
+            run: tests/basic.yml
     gate:
       jobs:
         - tox-linters
