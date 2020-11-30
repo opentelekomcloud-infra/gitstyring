@@ -1,12 +1,14 @@
 ---
+- job:
+    name: gh-role-linter
+    run: tests/basic.yml
+
 - project:
     merge-mode: squash-merge
     check:
       jobs:
         - tox-linters
-        - job:
-            name: basic test for checks orgs data
-            run: tests/basic.yml
+        - gh-role-linter
     gate:
       jobs:
         - tox-linters
