@@ -21,6 +21,8 @@
 - name: Manage orgs
   hosts: localhost
   gather_facts: false
+  vars_files:
+    - "./vars/default.yml"
   roles:
     - gitcontrol
   vars:
