@@ -16,3 +16,4 @@
     gate:
       jobs:
         - tox-linters
+        - ansible-test-simpleton
