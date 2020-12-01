@@ -1,0 +1,27 @@
+---
+- name: Check reading of orgs directory
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Register root dir
+      set_fact:
+        root_dir: "../orgs"
+
+    - name: Prepare github config
+      scan_organizations:
+        path: "{{ root_dir }}"
+      register: result
+
+    - name: assert result
+      assert:
+        that:
+          - result is success
+          - result is changed
+          - result.data is defined
+          - result.data.opentelekomcloud is defined
+          - result.data.opentelekomcloud.people is defined
+          - result.data.opentelekomcloud.teams is defined
+          - result.data["opentelekomcloud-infra"] is defined
+          - result.data["opentelekomcloud-infra"].people is defined
+          - result.data["opentelekomcloud-infra"].teams is defined
+          - result.data["opentelekomcloud-infra"].repositories is defined
