@@ -16,4 +16,3 @@
     gate:
       jobs:
         - tox-linters
-#        - ansible-playbook playbooks/run.yml -e github_repos_state=present
