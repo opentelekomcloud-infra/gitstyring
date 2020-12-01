@@ -1,9 +1,7 @@
 ---
 - job:
     name: ansible-test-simpleton
-    attempts: 1
-    pre-run: playbooks/simpleton/pre.yaml
-    run: playbooks/simpleton/run.yaml
+    parent: "simpleton"
     vars:
       simple_source_image: "ansible:latest"
       simple_run:
