@@ -1,0 +1,19 @@
+---
+- job:
+    name: ansible-test-simpleton
+    parent: "simpleton"
+    vars:
+      simple_source_image: "geerlingguy/docker-debian10-ansible:latest"
+      simple_run:
+        - ansible-playbook tests/basic.yml
+
+- project:
+    merge-mode: squash-merge
+    check:
+      jobs:
+        - tox-linters
+        - ansible-test-simpleton
+    gate:
+      jobs:
+        - tox-linters
+        - ansible-test-simpleton

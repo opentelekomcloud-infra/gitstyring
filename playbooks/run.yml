@@ -20,7 +20,7 @@
 
 - name: Manage orgs
   hosts: localhost
-  gather_facts: no
+  gather_facts: false
   roles:
     - gitcontrol
   vars:
