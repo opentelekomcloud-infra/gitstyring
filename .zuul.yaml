@@ -3,7 +3,7 @@
     name: ansible-test-simpleton
     parent: "simpleton"
     vars:
-      simple_source_image: "docker-debian10-ansible:latest"
+      simple_source_image: "geerlingguy/docker-debian10-ansible:latest"
       simple_run:
         - ansible-playbook tests/basic.yml
 
