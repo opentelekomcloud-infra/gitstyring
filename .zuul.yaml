@@ -1,14 +1,20 @@
 ---
 - job:
-    name: gh-role-linter
-    run: tests/basic.yml
+    name: ansible-test-simpleton
+    attempts: 1
+    pre-run: playbooks/simpleton/pre.yaml
+    run: playbooks/simpleton/run.yaml
+    vars:
+      simple_source_image: "ansible:latest"
+      simple_run:
+        - ansible-playbook tests/basic.yml
 
 - project:
     merge-mode: squash-merge
     check:
       jobs:
         - tox-linters
-        - gh-role-linter
+        - ansible-test-simpleton
     gate:
       jobs:
         - tox-linters
