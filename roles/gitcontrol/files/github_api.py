@@ -18,6 +18,8 @@ bad_statuses = [400, 403, 404, 422]
 def read_yaml_file(path, org, endpoint, repo_name=None):
     if endpoint in ['manage_collaborators', 'branch_protection', 'options']:
         path += f'/{org}/repositories/{repo_name}.yml'
+    if endpoint in ['teams']:
+        path += f'/{org}/teams/members.yml'
     with open(path, 'r') as file:
         data = yaml.safe_load(file)
     return data
@@ -80,6 +82,11 @@ def update_branch_protection(github_api, owner, repo_name, repo):
     return print(output, file=sys.stderr)
 
 
+def update_teams(github_api, owner, teams):
+    output = ''
+    return print(output, file=sys.stderr)
+
+
 if __name__ == '__main__':
     args_parser = ArgumentParser(prog='github_api', description='Multi-purpose github api script')
     args_parser.add_argument('--github_api_url', help='Github api base path', default='https://api.github.com')
@@ -108,4 +115,10 @@ if __name__ == '__main__':
             owner=args.org,
             repo_name=args.repo,
             repo=read_yaml_file(path=args.root, org=args.org, repo_name=args.repo, endpoint=args.endpoint)
+        )
+    if args.endpoint == 'teams':
+        update_teams(
+            github_api=args.github_api_url,
+            owner=args.org,
+            teams=read_yaml_file(path=args.root, org=args.org, endpoint=args.endpoint)
         )

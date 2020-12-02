@@ -2,7 +2,7 @@
 - name: "Update teams in {{ org.key }}"
     script: >
       github_api.py --endpoint teams
-      --org "{{ org.key }}" --teams "{{ org.value.teams }}"
+      --org "{{ org.key }}"
     args:
       executable: python3
     register: failed_team_members
