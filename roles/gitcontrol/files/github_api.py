@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import json
 import os
 import sys
 from argparse import ArgumentParser
@@ -86,8 +87,24 @@ def update_branch_protection(github_api, owner, repo_name, repo):
     return print(output, file=sys.stderr)
 
 
-def update_teams(github_api, owner, teams):
+def update_teams(github_api, owner, new_teams):
     output = ''
+    res = requests.get(
+        f'{github_api}/orgs/{owner}/teams',
+        headers=headers,
+        timeout=15)
+    teams = json.loads(res.text)
+    for team in json.loads(res.text):
+        res = requests.get(
+            f'{github_api}/orgs/{owner}/teams/{team["slug"]}/members?role=member',
+            headers=headers,
+            timeout=15)
+        members = json.loads(res.text)
+        for member in members:
+            for login in new_teams['teams'][team['name']]['member']:
+                if member['login'] == login:
+                    continue
+
     return print(output, file=sys.stderr)
 
 
@@ -124,5 +141,5 @@ if __name__ == '__main__':
         update_teams(
             github_api=args.github_api_url,
             owner=args.org,
-            teams=read_yaml_file(path=args.root, org=args.org, endpoint=args.endpoint)
+            new_teams=read_yaml_file(path=args.root, org=args.org, endpoint=args.endpoint)
         )
