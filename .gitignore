@@ -2,3 +2,4 @@
 ### Ansible template
 *.retry
 .idea/
+venv/

@@ -15,7 +15,7 @@ headers = {
 bad_statuses = [400, 403, 404, 422]
 
 
-def read_yaml_file(path, org, endpoint, repo_name=None):
+def read_yaml_file(path, org=None, endpoint=None, repo_name=None):
     if endpoint in ['manage_collaborators', 'branch_protection', 'options']:
         path += f'/{org}/repositories/{repo_name}.yml'
     if endpoint in ['teams']:
@@ -71,7 +71,11 @@ def manage_collaborators(github_api, owner, repo_name, repo):
 def update_branch_protection(github_api, owner, repo_name, repo):
     output = ''
     rules = repo[repo_name]['protection_rules']
+    if isinstance(rules, str):
+        rules = {repo[repo_name]['default_branch']: read_yaml_file(f'./templates/{rules}.yml')}
     branch_name = list(rules)[0]
+    if 'who_can_push' in rules[branch_name]:
+        rules[branch_name]['restrictions'] = rules[branch_name].pop('who_can_push')
     res = requests.put(
         f'{github_api}/repos/{owner}/{repo_name}/branches/{branch_name}/protection',
         json=rules[branch_name],
