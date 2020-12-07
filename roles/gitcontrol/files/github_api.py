@@ -70,7 +70,7 @@ def update_branch_protection(github_api, owner, repo_name, repo):
     output = ''
     rules = repo[repo_name]['protection_rules']
     if isinstance(rules, str):
-        rules = {repo[repo_name]['default_branch']: read_yaml_file(f'../templates/{rules}.yml')}
+        rules = {repo[repo_name]['default_branch']: read_yaml_file(f'./templates/{rules}.yml')}
     branch_name = list(rules)[0]
     if 'who_can_push' in rules[branch_name]:
         rules[branch_name]['restrictions'] = rules[branch_name].pop('who_can_push')
