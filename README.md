@@ -80,7 +80,6 @@ my_repo:
 
 Protection rules can be setted up through templates which should exist in **playbooks/templates**
 ```yaml
-Protection rules can be setted up through templates which should exist in roles/gicontrol/templates 
 my_repo:
   default_branch: main
   description: >-
