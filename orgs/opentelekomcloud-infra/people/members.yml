@@ -32,10 +32,6 @@ users:
     github_login: "outcatcher"
     visibility: Public
     role: Member
-  - name: "otcbot"
-    github_login: "otcbot"
-    visibility: Private
-    role: Member
   - name: "mrechenburg"
     github_login: "mrechenburg"
     visibility: Private
