@@ -1,5 +1,9 @@
 ---
 users:
+  - name: "otcbot"
+    github_login: "otcbot"
+    visibility: Private
+    role: Owner
   - name: "Artem Goncharov"
     github_login: "gtema"
     visibility: Public
@@ -31,10 +35,6 @@ users:
   - name: "Anton Kachurin"
     github_login: "outcatcher"
     visibility: Public
-    role: Member
-  - name: "otcbot"
-    github_login: "otcbot"
-    visibility: Private
     role: Member
   - name: "mrechenburg"
     github_login: "mrechenburg"
