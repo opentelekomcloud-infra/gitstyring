@@ -1,9 +1,5 @@
 ---
 users:
-  - name: "otcbot"
-    github_login: "otcbot"
-    visibility: Private
-    role: Owner
   - name: "Artem Goncharov"
     login: "gtema"
     visibility: Public
