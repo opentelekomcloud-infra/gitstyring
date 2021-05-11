@@ -1,0 +1,27 @@
+---
+kontainer-engine-driver-otc:
+  default_branch: master
+  description: Rancher container engine driver for OTC
+  homepage: null
+  language: Go
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  private: false
+  delete_branch_on_merge: false
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    maintain:
+    pull:
+    push:
+    admin:
+      - eco
+  collaborators:
+    maintain:
+    pull:
+    push:
+    admin:
+  protection_rules: default_zuul
