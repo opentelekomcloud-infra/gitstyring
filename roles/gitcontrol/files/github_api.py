@@ -21,7 +21,7 @@ def read_yaml_file(path, org=None, endpoint=None, repo_name=None):
         path += f'/{org}/repositories/{repo_name}.yml'
     if endpoint in ['teams']:
         path += f'/{org}/teams/members.yml'
-    if endpoint in ['teams']:
+    if endpoint in ['members']:
         path += f'/{org}/people/members.yml'
     with open(path, 'r') as file:
         data = yaml.safe_load(file)
@@ -131,22 +131,24 @@ def update_teams(github_api, owner, new_teams):
 
 def update_org_members(github_api, owner, new_people):
     output = ''
+    current_members = []
+
     res = requests.get(f'{github_api}/orgs/{owner}/members')
     org_members = json.loads(res.text)
     for member in org_members:
-        for person in new_people:
-            if member['login'] == person['github_login']:
-                continue
-            else:
-                res = requests.get(f'{github_api}/users/{person["github_login"]}')
-                user_id = json.loads(res.text)['id']
-                res = requests.post(
-                    f'{github_api}/orgs/{owner}/invitations',
-                    json={'invitee_id': user_id},
-                    headers=headers,
-                    timeout=15)
-                if res.status_code in bad_statuses:
-                    output += f'invite not send: {res.status_code}, error is: {res.text}\n'
+        current_members.append(member['login'])
+    for person in new_people['users']:
+        if person['login'] not in current_members:
+            res = requests.get(f'{github_api}/users/{person["login"]}')
+            user_id = json.loads(res.text)['id']
+            res = requests.post(
+                f'{github_api}/orgs/{owner}/invitations',
+                json={'invitee_id': user_id},
+                headers=headers,
+                timeout=15)
+            if res.status_code in bad_statuses:
+                output += f'invite not send for {person["login"]}' \
+                          f' status code: {res.status_code}, error is: {res.text}\n'
     return print(output, file=sys.stderr)
 
 
