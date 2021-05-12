@@ -21,6 +21,8 @@ def read_yaml_file(path, org=None, endpoint=None, repo_name=None):
         path += f'/{org}/repositories/{repo_name}.yml'
     if endpoint in ['teams']:
         path += f'/{org}/teams/members.yml'
+    if endpoint in ['teams']:
+        path += f'/{org}/people/members.yml'
     with open(path, 'r') as file:
         data = yaml.safe_load(file)
     return data
@@ -94,7 +96,7 @@ def update_teams(github_api, owner, new_teams):
         headers=headers,
         timeout=15)
     teams = json.loads(res.text)
-    for team in json.loads(res.text):
+    for team in teams:
         res = requests.get(
             f'{github_api}/orgs/{owner}/teams/{team["slug"]}/members?role=member',
             headers=headers,
@@ -104,7 +106,47 @@ def update_teams(github_api, owner, new_teams):
             for login in new_teams['teams'][team['name']]['member']:
                 if member['login'] == login:
                     continue
+                else:
+                    res = requests.put(
+                        f'{github_api}/orgs/{owner}/teams/{team["slug"]}/memberships/{login}',
+                        json={'role': 'member'})
+                    if res.status_code in bad_statuses:
+                        output += f'membership not updated: {res.status_code}, error is: {res.text}\n'
+            for login in new_teams['teams'][team['name']]['maintainer']:
+                if member['login'] == login:
+                    continue
+                else:
+                    res = requests.put(
+                        f'{github_api}/orgs/{owner}/teams/{team["slug"]}/memberships/{login}',
+                        json={'role': 'maintainer'})
+                    if res.status_code in bad_statuses:
+                        output += f'membership not updated: {res.status_code}, error is: {res.text}\n'
+    return print(output, file=sys.stderr)
 
+
+def update_org_members(github_api, owner, new_members):
+    output = ''
+    res = requests.get(
+        f'{github_api}/orgs/{owner}/teams',
+        headers=headers,
+        timeout=15)
+    teams = json.loads(res.text)
+    for team in teams:
+        res = requests.get(
+            f'{github_api}/orgs/{owner}/teams/{team["slug"]}/members?role=member',
+            headers=headers,
+            timeout=15)
+        members = json.loads(res.text)
+        for member in members:
+            for login in new_members['teams'][team['name']]['member']:
+                if member['login'] == login:
+                    continue
+                else:
+                    res = requests.put(
+                        f'{github_api}/orgs/{owner}/teams/{team["slug"]}/memberships/{login}',
+                        json={'role': 'member'})
+                    if res.status_code in bad_statuses:
+                        output += f'membership not updated: {res.status_code}, error is: {res.text}\n'
     return print(output, file=sys.stderr)
 
 
@@ -142,4 +184,10 @@ if __name__ == '__main__':
             github_api=args.github_api_url,
             owner=args.org,
             new_teams=read_yaml_file(path=args.root, org=args.org, endpoint=args.endpoint)
+        )
+    if args.endpoint == 'members':
+        update_org_members(
+            github_api=args.github_api_url,
+            owner=args.org,
+            new_members=read_yaml_file(path=args.root, org=args.org, endpoint=args.endpoint)
         )
