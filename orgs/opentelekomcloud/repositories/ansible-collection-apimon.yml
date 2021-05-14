@@ -1,7 +1,8 @@
 ---
 ansible-collection-apimon:
   default_branch: main
-  description: Ansible collection containing roles/playbooks related to APImon project
+  description: "Ansible collection containing roles/playbooks related
+    to APImon project"
   homepage: null
   language: Python
   archived: false

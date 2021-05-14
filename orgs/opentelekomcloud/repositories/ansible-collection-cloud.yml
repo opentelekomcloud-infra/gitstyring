@@ -1,7 +1,8 @@
 ---
 ansible-collection-cloud:
   default_branch: master
-  description: Ansible modules for using with OTC (addition to the native OpenStack modules)
+  description: "Ansible modules for using with OTC
+    (addition to the native OpenStack modules)"
   homepage: null
   language: Python
   archived: false

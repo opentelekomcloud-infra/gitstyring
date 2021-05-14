@@ -1,7 +1,8 @@
 ---
 OBS-File-Browser:
   default_branch: master
-  description: A prettier index.html for listing public files and folders in Open Telekom Cloud OBS buckets
+  description: "A prettier index.html for listing public files and folders
+    in Open Telekom Cloud OBS buckets"
   homepage: null
   language: HTML
   archived: false

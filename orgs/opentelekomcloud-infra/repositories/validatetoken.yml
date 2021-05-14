@@ -1,7 +1,8 @@
 ---
 validatetoken:
   default_branch: main
-  description: Oslo Middleware for token validation not requiring service account
+  description: "Oslo Middleware for token validation not requiring
+    service account"
   homepage: null
   language: Python
   archived: false

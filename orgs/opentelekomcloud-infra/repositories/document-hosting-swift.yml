@@ -1,7 +1,8 @@
 ---
 document-hosting-swift:
   default_branch: main
-  description: Simple helm chart to deploy nginx with static content on swift storage
+  description: "Simple helm chart to deploy nginx with static content
+    on swift storage"
   homepage: null
   archived: false
   has_issues: true

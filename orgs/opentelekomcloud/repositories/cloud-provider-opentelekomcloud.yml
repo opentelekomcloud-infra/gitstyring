@@ -1,7 +1,8 @@
 ---
 cloud-provider-opentelekomcloud:
   default_branch: master
-  description: Kubernetes Controller Manager is an external cloud controller manager for running kubernetes in a OpenTelekomCloud
+  description: "Kubernetes Controller Manager is an external cloud controller
+    manager for running kubernetes in a OpenTelekomCloud"
   homepage: null
   language: Go
   archived: false

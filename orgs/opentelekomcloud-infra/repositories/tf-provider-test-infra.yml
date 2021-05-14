@@ -1,7 +1,8 @@
 ---
 tf-provider-test-infra:
   default_branch: main
-  description: Terraform configuration for infrastructure required for running terraform provider acceptance tests
+  description: "Terraform configuration for infrastructure required for
+    running terraform provider acceptance tests"
   homepage: null
   language: Shell
   archived: false

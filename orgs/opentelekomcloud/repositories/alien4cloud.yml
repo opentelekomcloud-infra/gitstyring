@@ -1,7 +1,8 @@
 ---
 alien4cloud:
   default_branch: 3.0.x
-  description: (Used for sending PRs upstream) Application LIfecycle Enablement for Cloud
+  description: "(Used for sending PRs upstream) Application LIfecycle
+    Enablement for Cloud"
   homepage: null
   language: Java
   archived: false

@@ -1,7 +1,8 @@
 ---
 openshift-openstack-upi:
   default_branch: main
-  description: UserProvisionedInfrastructure scripts for deploying OpenShift as openstack_upi on OTC
+  description: "UserProvisionedInfrastructure scripts for deploying OpenShift
+    as openstack_upi on OTC"
   homepage: null
   language: Python
   archived: false

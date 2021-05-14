@@ -1,7 +1,8 @@
 ---
 test-to-be-deleted:
   default_branch: master
-  description: Test Repo for Github Management Tool
+  description: "Test Repo for Github Management Tool
+    Test Repo for Github Management Tool"
   homepage: null
   language: Python
   archived: false

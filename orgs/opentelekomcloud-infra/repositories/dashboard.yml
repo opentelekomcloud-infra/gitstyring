@@ -1,7 +1,8 @@
 ---
 dashboard:
   default_branch: master
-  description: Infrastructure scripts for the dashboard (grafana + influxdb) management
+  description: "Infrastructure scripts for the dashboard
+    (grafana + influxdb) management"
   homepage: null
   language: Python
   archived: false

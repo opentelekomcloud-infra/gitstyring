@@ -1,7 +1,8 @@
 ---
 scavenger-hunt:
   default_branch: master
-  description: Project for the scavenger hunt on the occasion of the tenth anniversary of OpenStack
+  description: "Project for the scavenger hunt on the occasion
+    of the tenth anniversary of OpenStack"
   homepage: null
   language: HTML
   archived: false
