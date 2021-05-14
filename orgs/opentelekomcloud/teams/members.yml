@@ -47,8 +47,8 @@ teams:
       - irina-pereiaslavskaia
       - YustinaKvr
   eco:
-    description: >
-      The Ecosystem squad takes care of user's access to Open Telekom Cloud.
+    description: "The Ecosystem squad takes care of user's access to
+      Open Telekom Cloud."
     visibility: visible
     parent:
     maintainer:
