@@ -52,3 +52,11 @@ users:
     login: "dev00"
     visibility: Private
     role: Member
+  - name: "SebastianGode"
+    login: "SebastianGode"
+    visibility: Private
+    role: Member
+  - name: "Yustina K"
+    login: "YustinaKvr"
+    visibility: Public
+    role: Member
