@@ -1,9 +1,9 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+kontainer-engine-driver-otc:
+  default_branch: master
+  description: Rancher container engine driver for OTC
   homepage: null
-  language: Python
+  language: Go
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

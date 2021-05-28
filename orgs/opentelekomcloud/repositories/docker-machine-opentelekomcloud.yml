@@ -1,9 +1,9 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+docker-machine-opentelekomcloud:
+  default_branch: devel
+  description: OpenTelekomCloud driver for docker-machine (new)
   homepage: null
-  language: Python
+  language: Go
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

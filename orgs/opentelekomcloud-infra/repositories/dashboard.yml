@@ -1,7 +1,8 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+dashboard:
+  default_branch: master
+  description: "Infrastructure scripts for the dashboard
+    (grafana + influxdb) management"
   homepage: null
   language: Python
   archived: false
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

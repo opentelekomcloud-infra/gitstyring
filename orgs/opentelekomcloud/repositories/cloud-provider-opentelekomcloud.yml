@@ -1,9 +1,10 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+cloud-provider-opentelekomcloud:
+  default_branch: master
+  description: "Kubernetes Controller Manager is an external cloud controller
+    manager for running kubernetes in a OpenTelekomCloud"
   homepage: null
-  language: Python
+  language: Go
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

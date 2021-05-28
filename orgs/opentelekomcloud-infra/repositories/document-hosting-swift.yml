@@ -1,9 +1,9 @@
 ---
-gitstyring:
+document-hosting-swift:
   default_branch: main
-  description: Github management by Ansible.
+  description: "Simple helm chart to deploy nginx with static content
+    on swift storage"
   homepage: null
-  language: Python
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

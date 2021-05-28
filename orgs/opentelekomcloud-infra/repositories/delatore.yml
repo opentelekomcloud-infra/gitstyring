@@ -1,7 +1,7 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+delatore:
+  default_branch: devel
+  description: Monitoring of customer service monitoring
   homepage: null
   language: Python
   archived: false
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

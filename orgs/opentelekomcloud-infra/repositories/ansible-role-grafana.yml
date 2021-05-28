@@ -1,7 +1,7 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+ansible-role-grafana:
+  default_branch: master
+  description: Ansible galaxy role to provision grafana in a Podman container
   homepage: null
   language: Python
   archived: false
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

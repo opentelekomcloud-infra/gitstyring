@@ -1,9 +1,8 @@
 ---
-gitstyring:
+document-hosting-operator:
   default_branch: main
-  description: Github management by Ansible.
+  description: Simple Kubernetes operator with nginx to host static content
   homepage: null
-  language: Python
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +23,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

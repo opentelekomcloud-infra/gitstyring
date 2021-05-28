@@ -1,9 +1,9 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+terraform-otc:
+  default_branch: master
+  description: Terraform integration modules for Open Telekom Cloud
   homepage: null
-  language: Python
+  language: HCL
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

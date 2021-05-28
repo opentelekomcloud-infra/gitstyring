@@ -1,7 +1,7 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+apimon:
+  default_branch: master
+  description: Component of the API-Monitoring to schedule and execute tasks
   homepage: null
   language: Python
   archived: false
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

@@ -1,9 +1,9 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+oms:
+  default_branch: devel
+  description: OpenTelekomCloud JS micro-SDK
   homepage: null
-  language: Python
+  language: TypeScript
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul
