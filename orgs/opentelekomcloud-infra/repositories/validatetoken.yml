@@ -1,7 +1,8 @@
 ---
-gitstyring:
+validatetoken:
   default_branch: main
-  description: Github management by Ansible.
+  description: "Oslo Middleware for token validation not requiring
+    service account"
   homepage: null
   language: Python
   archived: false
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

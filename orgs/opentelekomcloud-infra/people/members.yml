@@ -1,54 +1,62 @@
 ---
 users:
   - name: "Artem Goncharov"
-    github_login: "gtema"
+    login: "gtema"
     visibility: Public
     role: Owner
   - name: "Anton Sidelnikov"
-    github_login: "anton-sidelnikov"
+    login: "anton-sidelnikov"
     visibility: Public
     role: Member
   - name: "Vladimir Hasko"
-    github_login: "vladimirhasko"
+    login: "vladimirhasko"
     visibility: Public
     role: Owner
   - name: "Vineet Pruthi"
-    github_login: "vineet-pruthi"
+    login: "vineet-pruthi"
     visibility: Private
     role: Member
   - name: "Tino Schreiber"
-    github_login: "tischrei"
+    login: "tischrei"
     visibility: Public
     role: Member
   - name: "Jakob"
-    github_login: "schrej"
+    login: "schrej"
     visibility: Private
     role: Member
   - name: "Polina Gubina"
-    github_login: "Polina-Gubina"
+    login: "Polina-Gubina"
     visibility: Private
     role: Member
   - name: "Anton Kachurin"
-    github_login: "outcatcher"
+    login: "outcatcher"
     visibility: Public
     role: Member
   - name: "mrechenburg"
-    github_login: "mrechenburg"
+    login: "mrechenburg"
     visibility: Private
     role: Member
   - name: "Rodion Gyrbu"
-    github_login: "lego963"
+    login: "lego963"
     visibility: Public
     role: Member
   - name: "Kristian Kucerak"
-    github_login: "kucerakk"
+    login: "kucerakk"
     visibility: Public
     role: Owner
   - name: "Irina Pereiaslavskaia"
-    github_login: "irina-pereiaslavskaia"
+    login: "irina-pereiaslavskaia"
     visibility: Private
     role: Member
   - name: "dev00"
-    github_login: "dev00"
+    login: "dev00"
     visibility: Private
+    role: Member
+  - name: "SebastianGode"
+    login: "SebastianGode"
+    visibility: Private
+    role: Member
+  - name: "Yustina K"
+    login: "YustinaKvr"
+    visibility: Public
     role: Member

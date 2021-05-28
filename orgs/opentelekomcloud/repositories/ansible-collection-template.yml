@@ -1,7 +1,8 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+ansible-collection-template:
+  default_branch: master
+  description: "Template for ansible-collection project
+    with integration into otc-zuul"
   homepage: null
   language: Python
   archived: false
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

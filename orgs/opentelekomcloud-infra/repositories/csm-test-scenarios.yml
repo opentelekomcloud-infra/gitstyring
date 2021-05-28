@@ -1,7 +1,8 @@
 ---
-gitstyring:
+csm-test-scenarios:
   default_branch: main
-  description: Github management by Ansible.
+  description: "Test scenarios for apimon-like implementation of
+    Customer Service Monitoring"
   homepage: null
   language: Python
   archived: false
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

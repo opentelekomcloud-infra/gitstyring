@@ -1,9 +1,10 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+alien4cloud:
+  default_branch: 3.0.x
+  description: "(Used for sending PRs upstream) Application LIfecycle
+    Enablement for Cloud"
   homepage: null
-  language: Python
+  language: Java
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

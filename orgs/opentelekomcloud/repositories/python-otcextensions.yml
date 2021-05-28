@@ -1,7 +1,8 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+python-otcextensions:
+  default_branch: master
+  description: "Extension of the OpenStackSDK && OpenStackClient
+    with OpenTelekomCloud services"
   homepage: null
   language: Python
   archived: false
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

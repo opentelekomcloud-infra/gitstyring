@@ -1,9 +1,9 @@
 ---
-gitstyring:
+statsd-system-agent:
   default_branch: main
-  description: Github management by Ansible.
+  description: Statsd client to monitor system metrics
   homepage: null
-  language: Python
+  language: TypeScript
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

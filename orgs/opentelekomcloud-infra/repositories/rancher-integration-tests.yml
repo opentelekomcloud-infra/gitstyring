@@ -1,7 +1,7 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+rancher-integration-tests:
+  default_branch: master
+  description: Different integration tests for Rancher
   homepage: null
   language: Python
   archived: false
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

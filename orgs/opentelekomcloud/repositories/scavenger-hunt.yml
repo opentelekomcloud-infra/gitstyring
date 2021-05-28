@@ -1,9 +1,10 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+scavenger-hunt:
+  default_branch: master
+  description: "Project for the scavenger hunt on the occasion
+    of the tenth anniversary of OpenStack"
   homepage: null
-  language: Python
+  language: HTML
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

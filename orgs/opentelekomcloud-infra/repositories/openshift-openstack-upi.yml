@@ -1,7 +1,8 @@
 ---
-gitstyring:
+openshift-openstack-upi:
   default_branch: main
-  description: Github management by Ansible.
+  description: "UserProvisionedInfrastructure scripts for deploying OpenShift
+    as openstack_upi on OTC"
   homepage: null
   language: Python
   archived: false
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

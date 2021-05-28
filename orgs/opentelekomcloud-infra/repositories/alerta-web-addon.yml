@@ -1,9 +1,9 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+alerta-web-addon:
+  default_branch: master
+  description: Alerta web addon
   homepage: null
-  language: Python
+  language: HTML
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +24,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

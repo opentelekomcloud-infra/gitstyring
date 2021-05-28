@@ -1,7 +1,8 @@
 ---
-gitstyring:
-  default_branch: main
-  description: Github management by Ansible.
+bms-network-setup:
+  default_branch: master
+  description: "Script to parse network_data.json and configure
+    ifcfg-* files from it"
   homepage: null
   language: Python
   archived: false
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul

@@ -1,9 +1,10 @@
 ---
-gitstyring:
+tf-provider-test-infra:
   default_branch: main
-  description: Github management by Ansible.
+  description: "Terraform configuration for infrastructure required for
+    running terraform provider acceptance tests"
   homepage: null
-  language: Python
+  language: Shell
   archived: false
   has_issues: true
   has_projects: true
@@ -24,5 +25,4 @@ gitstyring:
     pull:
     push:
     admin:
-      - anton-sidelnikov
   protection_rules: default_zuul
