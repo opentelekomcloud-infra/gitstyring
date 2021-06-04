@@ -10,7 +10,7 @@ users:
     role: Owner
   - name: "Anton Kachurin"
     login: "outcatcher"
-    visibility: Private
+    visibility: Public
     role: Member
   - name: "Anton Sidelnikov"
     login: "anton-sidelnikov"
