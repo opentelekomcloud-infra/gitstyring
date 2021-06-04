@@ -1,0 +1,6 @@
+---
+users:
+  - name: "Rodion Gyrbu"
+    login: "lego963"
+    visibility: Public
+    role: Member
