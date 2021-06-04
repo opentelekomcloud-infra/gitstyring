@@ -1,2 +1,26 @@
 ---
-users: []
+users:
+  - name: "Artem Goncharov"
+    login: "gtema"
+    visibility: Private
+    role: Owner
+  - name: "Jakob"
+    login: "schrej"
+    visibility: Private
+    role: Member
+  - name: "Dr. Tri Vo"
+    login: "trihoangvo"
+    visibility: Private
+    role: Member
+  - name: "Vineet Pruthi"
+    login: "vineet-pruthi"
+    visibility: Private
+    role: Member
+  - name: "Robert Neumann"
+    login: "r0b2g1t"
+    visibility: Private
+    role: Member
+  - name: "Anton Sidelnikov"
+    login: "anton-sidelnikov"
+    visibility: Public
+    role: Member
