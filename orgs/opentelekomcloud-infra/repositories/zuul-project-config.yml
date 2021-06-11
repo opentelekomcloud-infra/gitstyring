@@ -15,10 +15,10 @@ zuul-project-config:
   allow_rebase_merge: false
   teams:
     maintain:
+      - eco
     pull:
     push:
     admin:
-      - eco
   collaborators:
     maintain:
     pull:
