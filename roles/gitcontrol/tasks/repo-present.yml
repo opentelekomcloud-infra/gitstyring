@@ -18,7 +18,7 @@
     - name: Update repository base options
       when: resp.status == 200
       script: >
-        github_api.py --endpoint options
+        github_api.py --endpoint options --root {{ root_dir }}
         --org "{{ org.key }}" --repo "{{ resp.repo.key }}"
       args:
         executable: python3
@@ -30,7 +30,7 @@
     - name: Update repository collaborators
       when: resp.status == 200
       script: >
-        github_api.py --endpoint manage_collaborators
+        github_api.py --endpoint manage_collaborators --root {{ root_dir }}
         --org "{{ org.key }}" --repo "{{ resp.repo.key }}"
       args:
         executable: python3
@@ -42,7 +42,7 @@
     - name: Update branch protection rules for repo
       when: resp.status == 200
       script: >
-        github_api.py --endpoint branch_protection
+        github_api.py --endpoint branch_protection --root {{ root_dir }}
         --org "{{ org.key }}" --repo "{{ resp.repo.key }}"
       args:
         executable: python3
