@@ -4,7 +4,8 @@
   tasks:
     - name: Register root dir
       set_fact:
-        root_dir: "../orgs"
+        # yamllint disable-line rule:line-length
+        root_dir: "{{ lookup('env', 'GITSTYRING_ROOT_DIR')|default('../orgs') }}"
 
 - name: Prepare github config
   hosts: localhost
@@ -29,4 +30,5 @@
     orgs: "{{ structure.data }}"
     github_user: "{{ lookup('env', 'GITHUB_USER') }}"
     github_token: "{{ lookup('env', 'GITHUB_TOKEN') }}"
-    github_api: https://api.github.com
+    # yamllint disable-line rule:line-length
+    github_api: "{{ lookup('env', 'GITHUB_API_URL')|default('https://api.github.com', true) }}"

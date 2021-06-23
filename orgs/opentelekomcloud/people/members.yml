@@ -1,2 +1,118 @@
 ---
 users:
+  - name: "28formica77"
+    login: "28formica77"
+    visibility: Private
+    role: Member
+  - name: "Andreas Eichhorn"
+    login: "AndreasEichhorn"
+    visibility: Private
+    role: Member
+  - name: "Artem Goncharov"
+    login: "gtema"
+    visibility: Public
+    role: Owner
+  - name: "Anton Sidelnikov"
+    login: "anton-sidelnikov"
+    visibility: Public
+    role: Member
+  - name: "danielaebert"
+    login: "danielaebert"
+    visibility: Private
+    role: Member
+  - name: "Frank Kloeker"
+    login: "eumel8"
+    visibility: Private
+    role: Member
+  - name: "Kurt Garloff"
+    login: "garloff"
+    visibility: Private
+    role: Member
+  - name: "György Hódi"
+    login: "hodigy"
+    visibility: Private
+    role: Member
+  - name: "Sascha Veres"
+    login: "jackdown"
+    visibility: Private
+    role: Member
+  - name: "lenI"
+    login: "kotnyel"
+    visibility: Private
+    role: Member
+  - name: "MrTechJay"
+    login: "MrTechJay"
+    visibility: Private
+    role: Member
+  - name: "Nils Magnus"
+    login: "Nils-Magnus"
+    visibility: Public
+    role: Member
+  - name: "opnmind"
+    login: "opnmind"
+    visibility: Private
+    role: Member
+  - name: "Vladimir Hasko"
+    login: "vladimirhasko"
+    visibility: Public
+    role: Owner
+  - name: "Vineet Pruthi"
+    login: "vineet-pruthi"
+    visibility: Private
+    role: Member
+  - name: "Tino Schreiber"
+    login: "tischrei"
+    visibility: Public
+    role: Member
+  - name: "Jakob"
+    login: "schrej"
+    visibility: Private
+    role: Member
+  - name: "Polina Gubina"
+    login: "Polina-Gubina"
+    visibility: Private
+    role: Member
+  - name: "Anton Kachurin"
+    login: "outcatcher"
+    visibility: Public
+    role: Member
+  - name: "mrechenburg"
+    login: "mrechenburg"
+    visibility: Private
+    role: Member
+  - name: "Rodion Gyrbu"
+    login: "lego963"
+    visibility: Public
+    role: Member
+  - name: "Kristian Kucerak"
+    login: "kucerakk"
+    visibility: Public
+    role: Owner
+  - name: "Irina Pereiaslavskaia"
+    login: "irina-pereiaslavskaia"
+    visibility: Private
+    role: Member
+  - name: "sab-systems"
+    login: "sab-systems"
+    visibility: Private
+    role: Member
+  - name: "SebastianGode"
+    login: "SebastianGode"
+    visibility: Public
+    role: Member
+  - name: "Dr. Tri Vo"
+    login: "trihoangvo"
+    visibility: Private
+    role: Member
+  - name: "Sebastian Wenner"
+    login: "wenners"
+    visibility: Private
+    role: Member
+  - name: "Zsolt Nagy"
+    login: "zsoltn"
+    visibility: Private
+    role: Member
+  - name: "Yustina K"
+    login: "YustinaKvr"
+    visibility: Public
+    role: Member

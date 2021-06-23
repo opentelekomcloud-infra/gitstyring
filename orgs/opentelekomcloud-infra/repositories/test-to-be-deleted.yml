@@ -1,7 +1,8 @@
 ---
 test-to-be-deleted:
   default_branch: master
-  description: Test Repo for Github Management Tool
+  description: "Test Repo for Github Management Tool
+    Test Repo for Github Management Tool"
   homepage: null
   language: Python
   archived: false
@@ -9,16 +10,16 @@ test-to-be-deleted:
   has_projects: true
   has_wiki: true
   private: false
-  delete_branch_on_merge: false
+  delete_branch_on_merge: true
   allow_merge_commit: false
   allow_squash_merge: true
   allow_rebase_merge: false
   teams:
     maintain:
+      - eco
     pull:
     push:
     admin:
-      - eco
   collaborators:
     maintain:
     pull:

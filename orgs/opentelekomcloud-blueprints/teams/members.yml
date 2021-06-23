@@ -1,0 +1,10 @@
+---
+teams:
+  eco:
+    description: Ecosystem
+    visibility: visible
+    parent:
+    maintainer:
+      - gtema
+    member:
+      - vineet-pruthi

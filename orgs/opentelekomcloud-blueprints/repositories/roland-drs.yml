@@ -1,0 +1,26 @@
+---
+roland-drs:
+  default_branch: master
+  description: drs scripts
+  homepage: null
+  language: Python
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  private: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    maintain:
+    pull:
+    push:
+    admin:
+  collaborators:
+    maintain:
+    pull:
+    push:
+    admin:
+  protection_rules: default_zuul

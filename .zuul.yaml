@@ -11,9 +11,12 @@
     merge-mode: squash-merge
     check:
       jobs:
-        - tox-linters
+        - otc-tox-linters
         - ansible-test-simpleton
     gate:
       jobs:
-        - tox-linters
+        - otc-tox-linters
         - ansible-test-simpleton
+    deploy:
+      jobs:
+        - infra-prod-manage-github

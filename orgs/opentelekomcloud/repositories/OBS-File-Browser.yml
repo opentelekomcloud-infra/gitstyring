@@ -1,0 +1,28 @@
+---
+OBS-File-Browser:
+  default_branch: master
+  description: "A prettier index.html for listing public files and folders
+    in Open Telekom Cloud OBS buckets"
+  homepage: null
+  language: HTML
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  private: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    maintain:
+      - eco
+    pull:
+    push:
+    admin:
+  collaborators:
+    maintain:
+    pull:
+    push:
+    admin:
+  protection_rules: default_zuul

@@ -1,0 +1,27 @@
+---
+ansible-role-server-common:
+  default_branch: master
+  description: Common ansible role with initial settings for any cloud server
+  homepage: null
+  language: Python
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  private: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    maintain:
+      - eco
+    pull:
+    push:
+    admin:
+  collaborators:
+    maintain:
+    pull:
+    push:
+    admin:
+  protection_rules: default_zuul

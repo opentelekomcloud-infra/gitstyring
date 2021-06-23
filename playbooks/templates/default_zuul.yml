@@ -1,3 +1,4 @@
+---
 required_status_checks:
   strict: false
   contexts:

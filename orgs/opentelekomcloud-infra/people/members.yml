@@ -32,10 +32,6 @@ users:
     login: "outcatcher"
     visibility: Public
     role: Member
-  - name: "otcbot"
-    login: "otcbot"
-    visibility: Private
-    role: Member
   - name: "mrechenburg"
     login: "mrechenburg"
     visibility: Private
@@ -55,4 +51,12 @@ users:
   - name: "dev00"
     login: "dev00"
     visibility: Private
+    role: Member
+  - name: "SebastianGode"
+    login: "SebastianGode"
+    visibility: Private
+    role: Member
+  - name: "Yustina K"
+    login: "YustinaKvr"
+    visibility: Public
     role: Member

@@ -1,0 +1,28 @@
+---
+alien4cloud:
+  default_branch: 3.0.x
+  description: "(Used for sending PRs upstream) Application LIfecycle
+    Enablement for Cloud"
+  homepage: null
+  language: Java
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  private: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    maintain:
+      - eco
+    pull:
+    push:
+    admin:
+  collaborators:
+    maintain:
+    pull:
+    push:
+    admin:
+  protection_rules: default_zuul
