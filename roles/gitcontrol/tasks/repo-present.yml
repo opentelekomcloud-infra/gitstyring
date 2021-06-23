@@ -40,7 +40,10 @@
       register: failed_users
 
     - name: Update branch protection rules for repo
-      when: resp.status == 200
+      when:
+        - resp.status == 200
+        - repo.protection_rules is defined
+        - repo.protection_rules|length > 0
       script: >
         github_api.py --endpoint branch_protection
         --org "{{ org.key }}" --repo "{{ resp.repo.key }}"
