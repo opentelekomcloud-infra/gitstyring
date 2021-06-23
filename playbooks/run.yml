@@ -4,7 +4,8 @@
   tasks:
     - name: Register root dir
       set_fact:
-        root_dir: "../orgs"
+        # yamllint disable-line rule:line-length
+        root_dir: "{{ lookup('env', 'GITSTYRING_ROOT_DIR')|default('../orgs') }}"
 
 - name: Prepare github config
   hosts: localhost
