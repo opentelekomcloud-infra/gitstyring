@@ -27,4 +27,5 @@
     orgs: "{{ structure.data }}"
     github_user: "{{ lookup('env', 'GITHUB_USER') }}"
     github_token: "{{ lookup('env', 'GITHUB_TOKEN') }}"
-    github_api: https://api.github.com
+    # yamllint disable-line rule:line-length
+    github_api: "{{ looup('env', 'GITHUB_API_URL')|default('https://api.github.com') }}"
