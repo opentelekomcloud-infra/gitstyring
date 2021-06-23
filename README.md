@@ -112,13 +112,14 @@ my_repo:
 * Those teams and collaborators should exist in organization.
 
 # How to use it
+As a prerequisite, a [PAT](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+must be created. The rights `repo` and `admin:org`  are required.
 
 Firstly:
-- export GITHUB_TOKEN="github-token"
-- export GITHUB_USER="github-username"
+- `export GITHUB_TOKEN="github-token"`
+- `export GITHUB_USER="github-username"`
 
 To apply changes in your organization repositories run:
 ```
 ansible-playbook playbooks/run.yml -e github_repos_state=present
-
 ```
