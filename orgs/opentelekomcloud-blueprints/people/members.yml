@@ -24,3 +24,39 @@ users:
     login: "anton-sidelnikov"
     visibility: Public
     role: Member
+  - name: "Vladimir Hasko"
+    login: "vladimirhasko"
+    visibility: Public
+    role: Member
+  - name: "Tino Schreiber"
+    login: "tischrei"
+    visibility: Public
+    role: Member
+  - name: "Polina Gubina"
+    login: "Polina-Gubina"
+    visibility: Private
+    role: Member
+  - name: "Anton Kachurin"
+    login: "outcatcher"
+    visibility: Public
+    role: Member
+  - name: "Rodion Gyrbu"
+    login: "lego963"
+    visibility: Public
+    role: Member
+  - name: "Kristian Kucerak"
+    login: "kucerakk"
+    visibility: Public
+    role: Owner
+  - name: "Irina Pereiaslavskaia"
+    login: "irina-pereiaslavskaia"
+    visibility: Private
+    role: Member
+  - name: "SebastianGode"
+    login: "SebastianGode"
+    visibility: Private
+    role: Member
+  - name: "Yustina K"
+    login: "YustinaKvr"
+    visibility: Public
+    role: Member
