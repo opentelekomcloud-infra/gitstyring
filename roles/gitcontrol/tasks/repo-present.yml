@@ -42,8 +42,8 @@
     - name: Update branch protection rules for repo
       when:
         - resp.status == 200
-        - repo.protection_rules is defined
-        - repo.protection_rules|length > 0
+        - "'protection_rules' in org.value.repositories[resp.repo.key]"
+        - org.value.repositories[resp.repo.key]['protection_rules']|length > 0
       script: >
         github_api.py --endpoint branch_protection --root {{ root_dir }}
         --org "{{ org.key }}" --repo "{{ resp.repo.key }}"
