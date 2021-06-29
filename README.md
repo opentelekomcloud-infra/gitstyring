@@ -53,6 +53,10 @@ my_repo:
     push: # List of members with push access.
     admin:  # List of admin members.
       - anton-sidelnikov
+  topics:  # List of repository topics.
+    - a
+    - b
+    - c
   protection_rules: # do not change protection rules structure all fields is required
     main: # branch name which already created in branch protection rules
       required_status_checks:
@@ -107,6 +111,10 @@ my_repo:
     push: # List of members with push access.
     admin:  # List of admin members.
       - anton-sidelnikov
+  topics:  # List of repository topics.
+    - a
+    - b
+    - c
   protection_rules: template_name
 ```
 * Those teams and collaborators should exist in organization.
