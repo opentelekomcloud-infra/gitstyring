@@ -15,7 +15,7 @@ def main():
 
     output = {}
     for root, dirs, files in os.walk(module.params['path']):
-        for file in files:
+        for file in [x for x in files if x.endswith(('.yml', '.yaml'))]:
             current_root = os.path.basename(root)
             a_yaml_file = open(os.path.join(root, file))
             parsed_yaml_file = yaml.safe_load(a_yaml_file)
