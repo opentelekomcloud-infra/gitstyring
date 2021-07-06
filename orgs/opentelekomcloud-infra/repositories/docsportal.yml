@@ -1,7 +1,7 @@
 ---
-base-jobs:
+docsportal:
   default_branch: main
-  description: Base zuul jobs
+  description: Main content for the documentation portal
   homepage: null
   language: Python
   archived: false

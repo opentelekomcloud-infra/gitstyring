@@ -1,6 +1,6 @@
 ---
 apimon:
-  default_branch: master
+  default_branch: main
   description: Component of the API-Monitoring to schedule and execute tasks
   homepage: null
   language: Python
