@@ -1,7 +1,7 @@
 ---
-octavia-proxy:
+ansible-collection-gitcontrol:
   default_branch: main
-  description: Open Telekom Cloud Octavia Proxy
+  description: Manage GitHub organizations using Ansible
   homepage: null
   language: Python
   archived: false
