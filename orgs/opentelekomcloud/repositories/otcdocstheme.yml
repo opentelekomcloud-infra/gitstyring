@@ -1,6 +1,6 @@
 ---
 otcdocstheme:
-  default_branch: master
+  default_branch: main
   description: OpenTelekomCloud docs Sphinx Theme
   homepage: null
   language: CSS
