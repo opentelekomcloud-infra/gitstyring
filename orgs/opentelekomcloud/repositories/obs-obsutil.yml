@@ -16,6 +16,7 @@ obs-obsutil:
   teams:
     maintain:
       - eco
+      - storage
     pull:
     push:
     admin:
