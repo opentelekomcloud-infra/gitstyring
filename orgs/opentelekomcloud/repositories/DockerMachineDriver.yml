@@ -16,6 +16,7 @@ DockerMachineDriver:
   teams:
     maintain:
       - eco
+      - gophers
     pull:
     push:
     admin:

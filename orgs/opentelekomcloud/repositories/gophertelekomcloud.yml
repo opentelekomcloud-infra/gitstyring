@@ -16,6 +16,7 @@ gophertelekomcloud:
   teams:
     maintain:
       - eco
+      - gophers
     pull:
     push:
     admin:
