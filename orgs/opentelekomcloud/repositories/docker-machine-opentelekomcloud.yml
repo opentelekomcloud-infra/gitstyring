@@ -16,6 +16,7 @@ docker-machine-opentelekomcloud:
   teams:
     maintain:
       - eco
+      - gophers
     pull:
     push:
     admin:

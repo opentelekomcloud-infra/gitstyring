@@ -16,6 +16,7 @@ terraform-provider-opentelekomcloud:
   teams:
     maintain:
       - eco
+      - gophers
     pull:
     push:
     admin:

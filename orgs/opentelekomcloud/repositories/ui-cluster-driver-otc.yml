@@ -16,6 +16,7 @@ ui-cluster-driver-otc:
   teams:
     maintain:
       - eco
+      - jsers
     pull:
     push:
     admin:
