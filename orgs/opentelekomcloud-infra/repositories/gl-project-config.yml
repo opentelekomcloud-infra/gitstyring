@@ -1,6 +1,6 @@
 ---
 gl-project-config:
-  default_branch: master
+  default_branch: main
   description: Zuul configuration for the GL tenant
   homepage: null
   language: Yaml
