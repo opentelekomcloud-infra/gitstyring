@@ -60,3 +60,7 @@ users:
     login: "YustinaKvr"
     visibility: Public
     role: Member
+  - name: "Vshivkov Vladimir"
+    login: "enrrou"
+    visibility: Public
+    role: Member
