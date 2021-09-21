@@ -14,7 +14,8 @@ teams:
     parent:
     maintainer:
       - gtema
-    member: []
+    member:
+      - enrrou
   gophers:
     description: For people contributing to OTC go-related projects
     visibility: visible
@@ -66,3 +67,4 @@ teams:
       - irina-pereiaslavskaia
       - SebastianGode
       - YustinaKvr
+      - enrrou
