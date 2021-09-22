@@ -1,0 +1,27 @@
+---
+elastic-load-balancing:
+  default_branch: main
+  description: Open Telekom Cloud Elastic Load Balancing Service docs
+  homepage: null
+  language: Python
+  archived: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  private: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    maintain:
+      - eco
+    pull:
+    push:
+    admin:
+  collaborators:
+    maintain:
+    pull:
+    push:
+    admin:
+  protection_rules: default_zuul

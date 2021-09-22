@@ -1,0 +1,42 @@
+---
+teams:
+  build:
+    description:
+    visibility: visible
+    parent:
+    maintainer:
+      - gtema
+      - otcbot
+    member: []
+  csm:
+    description:
+    visibility: visible
+    parent:
+    maintainer:
+      - gtema
+    member:
+      - outcatcher
+      - lego963
+      - Polina-Gubina
+      - anton-sidelnikov
+      - irina-pereiaslavskaia
+      - YustinaKvr
+  eco:
+    description: eco
+    visibility: visible
+    parent:
+    maintainer:
+      - gtema
+      - kucerakk
+      - vladimirhasko
+    member:
+      - outcatcher
+      - lego963
+      - tischrei
+      - vineet-pruthi
+      - Polina-Gubina
+      - irina-pereiaslavskaia
+      - SebastianGode
+      - anton-sidelnikov
+      - YustinaKvr
+      - enrrou
