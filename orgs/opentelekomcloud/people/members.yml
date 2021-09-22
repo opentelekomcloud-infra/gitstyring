@@ -108,10 +108,10 @@ users:
     login: "wenners"
     visibility: Private
     role: Member
-  - name: "Zsolt Nagy"
-    login: "zsoltn"
-    visibility: Private
-    role: Member
+      #  - name: "Zsolt Nagy"
+      #    login: "zsoltn"
+      #    visibility: Private
+      #    role: Member
   - name: "Yustina K"
     login: "YustinaKvr"
     visibility: Public
