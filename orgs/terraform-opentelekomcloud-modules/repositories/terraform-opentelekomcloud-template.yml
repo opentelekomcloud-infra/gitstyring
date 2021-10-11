@@ -18,6 +18,7 @@ terraform-opentelekomcloud-template:
     maintain:
     pull:
     push:
+      - eco
     admin:
   collaborators:
     maintain:

@@ -18,6 +18,7 @@ terraform-opentelekomcloud-vpc:
     maintain:
     pull:
     push:
+      - eco
     admin:
   collaborators:
     maintain:

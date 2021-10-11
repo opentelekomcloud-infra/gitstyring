@@ -1,2 +1,13 @@
 ---
-teams: {}
+teams:
+  eco:
+    description: eco
+    visibility: visible
+    parent:
+    maintainer:
+      - gtema
+      - otcbot
+      - lego963
+    member:
+      - outcatcher
+      - anton-sidelnikov

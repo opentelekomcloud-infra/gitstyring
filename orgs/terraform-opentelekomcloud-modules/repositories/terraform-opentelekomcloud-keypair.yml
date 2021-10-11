@@ -18,6 +18,7 @@ terraform-opentelekomcloud-keypair:
     maintain:
     pull:
     push:
+      - eco
     admin:
   collaborators:
     maintain:
