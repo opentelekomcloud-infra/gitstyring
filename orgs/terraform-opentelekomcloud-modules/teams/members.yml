@@ -6,7 +6,6 @@ teams:
     parent:
     maintainer:
       - gtema
-      - otcbot
       - lego963
     member:
       - outcatcher
