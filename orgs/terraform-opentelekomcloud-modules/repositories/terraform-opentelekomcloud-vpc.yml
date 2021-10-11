@@ -24,5 +24,4 @@ terraform-opentelekomcloud-vpc:
     pull:
     push:
     admin:
-      - lego963
   protection_rules: default_zuul

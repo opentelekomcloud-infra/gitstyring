@@ -24,5 +24,4 @@ terraform-opentelekomcloud-security-group:
     pull:
     push:
     admin:
-      - lego963
   protection_rules: default_zuul
