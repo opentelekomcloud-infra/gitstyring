@@ -18,7 +18,6 @@ terraform-setter-lint:
     pull:
     push:
       - eco
-      - gophers
     admin:
   collaborators:
     maintain:
