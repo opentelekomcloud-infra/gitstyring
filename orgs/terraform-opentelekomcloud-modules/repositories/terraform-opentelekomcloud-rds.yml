@@ -1,13 +1,14 @@
 ---
-terraform-opentelekomcloud-ecs:
+terraform-opentelekomcloud-rds:
   default_branch: main
-  description: OpenTelekomCloud ECS Terraform module
-  homepage: null
+  description: OpenTelekomCloud RDSv3 Terraform module
+  homepage: |
+    https://registry.terraform.io/modules/terraform-opentelekomcloud-modules/rds/opentelekomcloud/
   language: HCL
   archived: false
   has_issues: true
-  has_projects: true
-  has_wiki: true
+  has_projects: false
+  has_wiki: false
   private: false
   delete_branch_on_merge: true
   allow_merge_commit: false
@@ -17,6 +18,7 @@ terraform-opentelekomcloud-ecs:
     maintain:
     pull:
     push:
+      - eco
     admin:
   collaborators:
     maintain:
