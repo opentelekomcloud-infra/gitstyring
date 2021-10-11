@@ -1,13 +1,14 @@
 ---
-terraform-opentelekomcloud-ecs:
+terraform-opentelekomcloud-security-group:
   default_branch: main
-  description: OpenTelekomCloud ECS Terraform module
-  homepage: null
+  description: OpenTelekomCloud Security Group Terraform module
+  homepage: |
+    https://registry.terraform.io/modules/terraform-opentelekomcloud-modules/security-group/opentelekomcloud/
   language: HCL
   archived: false
   has_issues: true
-  has_projects: true
-  has_wiki: true
+  has_projects: false
+  has_wiki: false
   private: false
   delete_branch_on_merge: true
   allow_merge_commit: false
@@ -23,4 +24,5 @@ terraform-opentelekomcloud-ecs:
     pull:
     push:
     admin:
+      - lego963
   protection_rules: default_zuul

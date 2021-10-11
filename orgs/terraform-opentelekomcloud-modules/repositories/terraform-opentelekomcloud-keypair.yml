@@ -1,9 +1,9 @@
 ---
-terraform-opentelekomcloud-vpc:
+terraform-opentelekomcloud-keypair:
   default_branch: main
-  description: OpenTelekomCloud VPC Terraform module
+  description: OpenTelekomCloud KeyPair Terraform module
   homepage: |
-    https://registry.terraform.io/modules/terraform-opentelekomcloud-modules/vpc/opentelekomcloud/
+    https://registry.terraform.io/modules/terraform-opentelekomcloud-modules/keypair/opentelekomcloud
   language: HCL
   archived: false
   has_issues: true

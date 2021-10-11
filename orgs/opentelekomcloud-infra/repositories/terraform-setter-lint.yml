@@ -1,10 +1,9 @@
 ---
-terraform-opentelekomcloud-vpc:
+terraform-setter-lint:
   default_branch: main
-  description: OpenTelekomCloud VPC Terraform module
-  homepage: |
-    https://registry.terraform.io/modules/terraform-opentelekomcloud-modules/vpc/opentelekomcloud/
-  language: HCL
+  description: Validate Terraform provider setters to be consistent.
+  homepage: null
+  language: Go
   archived: false
   has_issues: true
   has_projects: false
@@ -16,6 +15,8 @@ terraform-opentelekomcloud-vpc:
   allow_rebase_merge: false
   teams:
     maintain:
+      - eco
+      - gophers
     pull:
     push:
     admin:
@@ -24,5 +25,4 @@ terraform-opentelekomcloud-vpc:
     pull:
     push:
     admin:
-      - lego963
   protection_rules: default_zuul
