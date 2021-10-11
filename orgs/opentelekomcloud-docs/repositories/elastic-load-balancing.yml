@@ -15,9 +15,9 @@ elastic-load-balancing:
   allow_rebase_merge: false
   teams:
     maintain:
-      - eco
     pull:
     push:
+      - docs
     admin:
   collaborators:
     maintain:
