@@ -1,10 +1,9 @@
 ---
-terraform-opentelekomcloud-template:
+terraform-setter-lint:
   default_branch: main
-  description: |
-    Template for terraform modules project with integration into otc-zuul
+  description: Validate Terraform provider setters to be consistent.
   homepage: null
-  language: HCL
+  language: Go
   archived: false
   has_issues: true
   has_projects: false
@@ -19,6 +18,7 @@ terraform-opentelekomcloud-template:
     pull:
     push:
       - eco
+      - gophers
     admin:
   collaborators:
     maintain:

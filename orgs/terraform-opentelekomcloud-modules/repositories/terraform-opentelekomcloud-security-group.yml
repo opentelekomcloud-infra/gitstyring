@@ -1,9 +1,9 @@
 ---
-terraform-opentelekomcloud-template:
+terraform-opentelekomcloud-security-group:
   default_branch: main
-  description: |
-    Template for terraform modules project with integration into otc-zuul
-  homepage: null
+  description: OpenTelekomCloud Security Group Terraform module
+  homepage: |
+    https://registry.terraform.io/modules/terraform-opentelekomcloud-modules/security-group/opentelekomcloud/
   language: HCL
   archived: false
   has_issues: true
