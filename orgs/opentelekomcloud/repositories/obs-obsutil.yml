@@ -15,10 +15,10 @@ obs-obsutil:
   allow_rebase_merge: false
   teams:
     maintain:
-      - eco
-      - storage
     pull:
     push:
+      - eco
+      - storage
     admin:
   collaborators:
     maintain:

@@ -15,10 +15,10 @@ ui-driver-otc:
   allow_rebase_merge: false
   teams:
     maintain:
-      - eco
-      - jsers
     pull:
     push:
+      - eco
+      - jsers
     admin:
   collaborators:
     maintain:

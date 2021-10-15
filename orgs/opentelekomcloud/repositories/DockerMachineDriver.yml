@@ -15,10 +15,10 @@ DockerMachineDriver:
   allow_rebase_merge: false
   teams:
     maintain:
-      - eco
-      - gophers
     pull:
     push:
+      - eco
+      - gophers
     admin:
   collaborators:
     maintain:
