@@ -15,9 +15,9 @@ csm-k8s-teamcity:
   allow_rebase_merge: false
   teams:
     maintain:
-      - eco
     pull:
     push:
+      - eco
     admin:
   collaborators:
     maintain:
