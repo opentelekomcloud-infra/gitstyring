@@ -32,7 +32,7 @@ teams:
     description: "Enterprise Dashboard docs maintainer team"
     privacy: "closed"
     parent:
-      maintainer:
-      member:
-        - gtema
-        - opnmind
+    maintainer: []
+    member:
+      - gtema
+      - opnmind
