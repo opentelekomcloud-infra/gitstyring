@@ -39,5 +39,5 @@ users:
     login: enrrou
     role: Member
   - name: Nils Magnus
-    login: opnmind
+    login: nils-magnus
     role: Member
