@@ -1,43 +1,43 @@
 users:
-  - name: Artem Goncharov
-    login: gtema
-    role: Owner
-  - name: Anton Sidelnikov
-    login: anton-sidelnikov
-    role: Member
-  - name: Vladimir Hasko
-    login: vladimirhasko
-    role: Owner
-  - name: Vineet Pruthi
-    login: vineet-pruthi
-    role: Member
-  - name: Tino Schreiber
-    login: tischrei
-    role: Member
-  - name: Polina Gubina
-    login: Polina-Gubina
-    role: Member
-  - name: Anton Kachurin
-    login: outcatcher
-    role: Member
-  - name: Rodion Gyrbu
-    login: lego963
-    role: Member
-  - name: Kristian Kucerak
-    login: kucerakk
-    role: Owner
-  - name: Irina Pereiaslavskaia
-    login: irina-pereiaslavskaia
-    role: Member
-  - name: SebastianGode
-    login: SebastianGode
-    role: Member
-  - name: Yustina K
-    login: YustinaKvr
-    role: Member
-  - name: Vshivkov Vladimir
-    login: enrrou
-    role: Member
-  - name: Nils Magnus
-    login: nils-magnus
-    role: Member
+- name: Anton Kachurin
+  login: outcatcher
+  role: Member
+- name: Anton Sidelnikov
+  login: anton-sidelnikov
+  role: Member
+- name: Artem Goncharov
+  login: gtema
+  role: Owner
+- name: Irina Pereiaslavskaia
+  login: irina-pereiaslavskaia
+  role: Member
+- name: Kristian Kucerak
+  login: kucerakk
+  role: Owner
+- name: Nils Magnus
+  login: nils-magnus
+  role: Member
+- name: Polina Gubina
+  login: Polina-Gubina
+  role: Member
+- name: Rodion Gyrbu
+  login: lego963
+  role: Member
+- name: Sebastian Gode
+  login: SebastianGode
+  role: Member
+- name: Tino Schreiber
+  login: tischrei
+  role: Member
+- name: Vineet Pruthi
+  login: vineet-pruthi
+  role: Member
+- name: Vladimir Hasko
+  login: vladimirhasko
+  role: Owner
+- name: Vshivkov Vladimir
+  login: enrrou
+  role: Member
+- name: Yustina Kvrivishvili
+  login: YustinaKvr
+  role: Member
