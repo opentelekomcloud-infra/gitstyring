@@ -1,18 +1,14 @@
 ---
 users:
-  - name: "Rodion Gyrbu"
-    login: "lego963"
-    visibility: Public
+  - name: Anton Kachurin
+    login: outcatcher
     role: Member
-  - name: "Artem Goncharov"
-    login: "gtema"
-    visibility: Private
+  - name: Anton Sidelnikov
+    login: anton-sidelnikov
+    role: Member
+  - name: Artem Goncharov
+    login: gtema
     role: Owner
-  - name: "Anton Kachurin"
-    login: "outcatcher"
-    visibility: Public
-    role: Member
-  - name: "Anton Sidelnikov"
-    login: "anton-sidelnikov"
-    visibility: Public
+  - name: Rodion Gyrbu
+    login: lego963
     role: Member

@@ -1,50 +1,47 @@
 ---
 users:
-  - name: "Artem Goncharov"
-    login: "gtema"
+  - name: Anton Kachurin
+    login: outcatcher
+    role: Member
+  - name: Anton Sidelnikov
+    login: anton-sidelnikov
+    role: Member
+  - name: Artem Goncharov
+    login: gtema
     role: Owner
-  - name: "Anton Sidelnikov"
-    login: "anton-sidelnikov"
+  - name: Irina Pereiaslavskaia
+    login: irina-pereiaslavskaia
     role: Member
-  - name: "Vladimir Hasko"
-    login: "vladimirhasko"
+  - name: Jakob Schrettenbrunner
+    login: schrej
+    role: Member
+  - name: Kristian Kucerak
+    login: kucerakk
     role: Owner
-  - name: "Vineet Pruthi"
-    login: "vineet-pruthi"
+  - name: Michael Rose
+    login: dev00
     role: Member
-  - name: "Tino Schreiber"
-    login: "tischrei"
+  - name: Polina Gubina
+    login: Polina-Gubina
     role: Member
-  - name: "Jakob"
-    login: "schrej"
+  - name: Rodion Gyrbu
+    login: lego963
     role: Member
-  - name: "Polina Gubina"
-    login: "Polina-Gubina"
+  - name: Sebastian Gode
+    login: SebastianGode
     role: Member
-  - name: "Anton Kachurin"
-    login: "outcatcher"
+  - name: Tino Schreiber
+    login: tischrei
     role: Member
-  - name: "mrechenburg"
-    login: "mrechenburg"
+  - name: Vineet Pruthi
+    login: vineet-pruthi
     role: Member
-  - name: "Rodion Gyrbu"
-    login: "lego963"
-    role: Member
-  - name: "Kristian Kucerak"
-    login: "kucerakk"
+  - name: Vladimir Hasko
+    login: vladimirhasko
     role: Owner
-  - name: "Irina Pereiaslavskaia"
-    login: "irina-pereiaslavskaia"
+  - name: Vshivkov Vladimir
+    login: enrrou
     role: Member
-  - name: "dev00"
-    login: "dev00"
-    role: Member
-  - name: "SebastianGode"
-    login: "SebastianGode"
-    role: Member
-  - name: "Yustina K"
-    login: "YustinaKvr"
-    role: Member
-  - name: "Vshivkov Vladimir"
-    login: "enrrou"
+  - name: Yustina Kvrivishvili
+    login: YustinaKvr
     role: Member

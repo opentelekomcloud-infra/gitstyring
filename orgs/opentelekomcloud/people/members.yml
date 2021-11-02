@@ -1,92 +1,89 @@
 ---
 users:
-  - name: "28formica77"
-    login: "28formica77"
+  - name: Andreas Eichhorn
+    login: AndreasEichhorn
     role: Member
-  - name: "Andreas Eichhorn"
-    login: "AndreasEichhorn"
+  - name: Anton Kachurin
+    login: outcatcher
     role: Member
-  - name: "Artem Goncharov"
-    login: "gtema"
+  - name: Anton Sidelnikov
+    login: anton-sidelnikov
+    role: Member
+  - name: Artem Goncharov
+    login: gtema
     role: Owner
-  - name: "Anton Sidelnikov"
-    login: "anton-sidelnikov"
+  - name: Daniela Ebert
+    login: danielaebert
     role: Member
-  - name: "danielaebert"
-    login: "danielaebert"
+  - name: Dr. Tri Vo
+    login: trihoangvo
     role: Member
-  - name: "Frank Kloeker"
-    login: "eumel8"
+  - name: Frank Kloeker
+    login: eumel8
     role: Member
-  - name: "Kurt Garloff"
-    login: "garloff"
+  - name: "Gyorgy Hodi"
+    login: hodigy
     role: Member
-  - name: "György Hódi"
-    login: "hodigy"
+  - name: Irina Pereiaslavskaia
+    login: irina-pereiaslavskaia
     role: Member
-  - name: "Sascha Veres"
-    login: "jackdown"
+  - name: Jakob Schrettenbrunner
+    login: schrej
     role: Member
-  - name: "lenI"
-    login: "kotnyel"
+  - name: Kristian Kucerak
+    login: kucerakk
     role: Member
-  - name: "MrTechJay"
-    login: "MrTechJay"
+  - name: Kurt Garloff
+    login: garloff
     role: Member
-  - name: "Nils Magnus"
-    login: "Nils-Magnus"
+  - name: Lenard Prigyeni
+    login: kotnyel
     role: Member
-  - name: "opnmind"
-    login: "opnmind"
+  - name: Matthias Rechenburg
+    login: mrechenburg
     role: Member
-  - name: "Vladimir Hasko"
-    login: "vladimirhasko"
+  - name: MrTechJay
+    login: MrTechJay
     role: Member
-  - name: "Vineet Pruthi"
-    login: "vineet-pruthi"
+  - name: Nils Magnus
+    login: Nils-Magnus
     role: Member
-  - name: "Tino Schreiber"
-    login: "tischrei"
+  - name: Polina Gubina
+    login: Polina-Gubina
     role: Member
-  - name: "Jakob"
-    login: "schrej"
+  - name: Rodion Gyrbu
+    login: lego963
     role: Member
-  - name: "Polina Gubina"
-    login: "Polina-Gubina"
+  - name: Roman Schiller
+    login: opnmind
     role: Member
-  - name: "Anton Kachurin"
-    login: "outcatcher"
+  - name: Sascha Veres
+    login: jackdown
     role: Member
-  - name: "mrechenburg"
-    login: "mrechenburg"
+  - name: Sebastian Gode
+    login: SebastianGode
     role: Member
-  - name: "Rodion Gyrbu"
-    login: "lego963"
-    role: Member
-  - name: "Kristian Kucerak"
-    login: "kucerakk"
-    role: Member
-  - name: "Irina Pereiaslavskaia"
-    login: "irina-pereiaslavskaia"
-    role: Member
-  - name: "sab-systems"
-    login: "sab-systems"
-    role: Member
-  - name: "SebastianGode"
-    login: "SebastianGode"
-    role: Member
-  - name: "Dr. Tri Vo"
-    login: "trihoangvo"
-    role: Member
-  - name: "Sebastian Wenner"
-    login: "wenners"
+  - name: Sebastian Wenner
+    login: wenners
     role: Owner
-  - name: "Zsolt Nagy"
-    login: "zsoltn"
+  - name: Tino Schreiber
+    login: tischrei
     role: Member
-  - name: "Yustina K"
-    login: "YustinaKvr"
+  - name: Vineet Pruthi
+    login: vineet-pruthi
     role: Member
-  - name: "Vshivkov Vladimir"
-    login: "enrrou"
+  - name: Vladimir Hasko
+    login: vladimirhasko
+    role: Member
+  - name: Vshivkov Vladimir
+    login: enrrou
+    role: Member
+  - name: Yustina K
+    login: YustinaKvr
+    role: Member
+  - name: Zsolt Nagy
+    login: zsoltn
+    role: Member
+  - name: sab-systems
+    login: sab-systems
     role: Member
