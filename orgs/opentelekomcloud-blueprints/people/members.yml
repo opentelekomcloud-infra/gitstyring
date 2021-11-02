@@ -1,49 +1,50 @@
+---
 users:
-- login: outcatcher
-  name: Anton Kachurin
-  role: Member
-- login: anton-sidelnikov
-  name: Anton Sidelnikov
-  role: Member
-- login: gtema
-  name: Artem Goncharov
-  role: Owner
-- login: trihoangvo
-  name: Tri Vo
-  role: Member
-- login: irina-pereiaslavskaia
-  name: Irina Pereiaslavskaia
-  role: Member
-- login: schrej
-  name: Jakob Schrettenbrunner
-  role: Member
-- login: kucerakk
-  name: Kristian Kucerak
-  role: Owner
-- login: Polina-Gubina
-  name: Polina Gubina
-  role: Member
-- login: r0b2g1t
-  name: Robert Neumann
-  role: Member
-- login: lego963
-  name: Rodion Gyrbu
-  role: Member
-- login: SebastianGode
-  name: Sebastian Gode
-  role: Member
-- login: tischrei
-  name: Tino Schreiber
-  role: Member
-- login: vineet-pruthi
-  name: Vineet Pruthi
-  role: Member
-- login: vladimirhasko
-  name: Vladimir Hasko
-  role: Member
-- login: enrrou
-  name: Vshivkov Vladimir
-  role: Member
-- login: YustinaKvr
-  name: Yustina Kvrivishvili
-  role: Member
+  - login: outcatcher
+    name: Anton Kachurin
+    role: Member
+  - login: anton-sidelnikov
+    name: Anton Sidelnikov
+    role: Member
+  - login: gtema
+    name: Artem Goncharov
+    role: Owner
+  - login: trihoangvo
+    name: Tri Vo
+    role: Member
+  - login: irina-pereiaslavskaia
+    name: Irina Pereiaslavskaia
+    role: Member
+  - login: schrej
+    name: Jakob Schrettenbrunner
+    role: Member
+  - login: kucerakk
+    name: Kristian Kucerak
+    role: Owner
+  - login: Polina-Gubina
+    name: Polina Gubina
+    role: Member
+  - login: r0b2g1t
+    name: Robert Neumann
+    role: Member
+  - login: lego963
+    name: Rodion Gyrbu
+    role: Member
+  - login: SebastianGode
+    name: Sebastian Gode
+    role: Member
+  - login: tischrei
+    name: Tino Schreiber
+    role: Member
+  - login: vineet-pruthi
+    name: Vineet Pruthi
+    role: Member
+  - login: vladimirhasko
+    name: Vladimir Hasko
+    role: Member
+  - login: enrrou
+    name: Vshivkov Vladimir
+    role: Member
+  - login: YustinaKvr
+    name: Yustina Kvrivishvili
+    role: Member
