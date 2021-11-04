@@ -1,10 +1,29 @@
 ---
+- job:
+    name: gitstyring-apply
+    parent: unittests
+    description: |
+      Apply configuration
+    pre-run: playbooks/pre.yaml
+    run: playbooks/run.yaml
+    vars:
+      token: "test"
+
+- job:
+    name: gitstyring-apply-check
+    parent: gitstyring-apply
+    description: |
+      Apply configuration - dry run
+    vars:
+      check_mode: true
+
 - project:
     merge-mode: squash-merge
     default-branch: main
     check:
       jobs:
         - otc-tox-linters
+        - gitstyring-apply-check
     gate:
       jobs:
         - otc-tox-linters

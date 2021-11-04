@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+    - role: ansible-collection-install
+      vars:
+        ansible_collection_install_galaxy_collection_name: "git+https://github.com/opentelekomcloud/ansible-collection-gitcontrol.git,main"  # yamllint disable-line rule:line-length
