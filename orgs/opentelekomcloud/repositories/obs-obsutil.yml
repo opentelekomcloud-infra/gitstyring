@@ -3,26 +3,14 @@ obs-obsutil:
   default_branch: master
   description: OBS util
   homepage: null
-  language: Go
   archived: false
   has_issues: true
   has_projects: false
   has_wiki: false
-  private: false
   delete_branch_on_merge: true
   allow_merge_commit: false
   allow_squash_merge: true
   allow_rebase_merge: false
   teams:
-    maintain:
-    pull:
-    push:
-      - eco
-      - storage
-    admin:
-  collaborators:
-    maintain:
-    pull:
-    push:
-    admin:
-  protection_rules: default_zuul
+    - slug: "storage"
+      permission: "push"

@@ -1,8 +1,0 @@
----
-- hosts: all
-  tasks:
-    - set_fact:
-        ansible_args: "-e github_token={{ token }} -e gitstyring_root_dir {{ zuul.project.src_dir }} {{ check_mode | ternary('--check', '') }}"
-
-    - name: Execute
-      command: "{{ ensure_ansible_ansible_executable }} {{ zuul.project.src_dir }}/playbooks/gitcontrol.yaml {{ ansible_args }}"
