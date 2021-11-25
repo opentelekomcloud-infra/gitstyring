@@ -4,7 +4,7 @@ api-monitoring:
   description: Project for monitoring of the Opentelekomcloud APIs
   homepage: null
   language: Python
-  archived: false
+  archived: true
   has_issues: true
   has_projects: false
   has_wiki: false
@@ -13,15 +13,3 @@ api-monitoring:
   allow_merge_commit: false
   allow_squash_merge: true
   allow_rebase_merge: false
-  teams:
-    maintain:
-    pull:
-    push:
-      - eco
-    admin:
-  collaborators:
-    maintain:
-    pull:
-    push:
-    admin:
-  protection_rules: default_zuul

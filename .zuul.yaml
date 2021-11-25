@@ -1,13 +1,49 @@
 ---
+- secret:
+    name: zuul_gitcontrol_vault
+    data:
+      vault_addr: "https://vault-lb.eco.tsi-dev.otc-service.com:8200"
+      role_id: 5d0e4151-23b3-23cf-e5ca-91a7f27622c7
+      secret_name: "secret/data/otcbot"
+      secret_id: !encrypted/pkcs1-oaep
+        - RlTPRexMLMV7wbIUfRjag6xypGO50F95D1q1z3O/rV0ECfQggTOC9kRBtII4KTsnbyfAG
+          QyVhHkJEg9Jin6mqU5A1eR9hKGiRLsVaaeuJfXwC5Sc4rMzHUbapjIvW3zJJ3oStJWGC5
+          urvYDCD7au0JIW4FLa5dvoUzdKJhW5AmSAoAkeVGvgeb7PbtFdDG7/g0vsIHDSWB5Aknh
+          QXpTwVMxKexo2gZs/c1Pyy6TJysHr1TrMf1YDDFeT+KWKXNscIXezH9SyCsFlf2XegBzF
+          N+k+gInIrkYuj8ZKdrdUjCWA6NrDi/XnQ9NzutBRZL1tubB0U5nATB22PHHVS0FfYVoO3
+          Dv8iokWgNFgw5E08BYhxFjmDLEP9AHTxBs8cXLR0TfDVIRRZzXQXXfRhVhoaJpAQFPR9W
+          EEB0O1vCYamD6/AhUdPvz/lYHo5RoXTQULNhGDzOTrgO0dRto3Ec+eiDcSDss3p9/e1FF
+          VU3GyPfTV8M1J75Saz9boeNN2Zwy9sDIMPXZdN7Ym5unD8YSjuP83F5jTLgFW6P8jHbde
+          4OXaWz7sYDWUE8/eypY4RvOiKD958jLNgQtCvAv070N2/e5vsIs6yUXsvONOnDx/tYKnY
+          leWyW/umcR+bQtnJUfr/2LWZ1hbHSZxIphLgerCZje1RBZ1eky29x/BMCszvYg=
+
 - project:
     merge-mode: squash-merge
     default-branch: main
+    vars:
+      gitcontrol_organizations:
+        - opentelekomcloud
+        - opentelekomcloud-blueprints
+        - opentelekomcloud-docs
+        - opentelekomcloud-infra
+        - terraform-opentelekomcloud-modules
+      gitcontrol_root_dir: "{{ ansible_user_dir }}/{{ zuul.project.src_dir }}/orgs"
     check:
       jobs:
         - otc-tox-linters
+    check-post:
+      jobs:
+        - gitcontrol-apply-dry-run: &gitcontrol_vars
+            secrets:
+              - secret: zuul_gitcontrol_vault
+                name: zuul_gitcontrol_vault
+                pass-to-parent: true
     gate:
       jobs:
         - otc-tox-linters
+        - gitcontrol-apply-dry-run:
+            <<: *gitcontrol_vars
     deploy:
       jobs:
-        - infra-prod-manage-github
+        - gitcontrol-apply:
+            <<: *gitcontrol_vars
