@@ -1,8 +1,8 @@
 ---
 docsportal:
   default_branch: main
-  description: Landing page for the new helpcenter
   homepage: https://docs.otc-service.com
+  description: Main content for the documentation portal
   archived: false
   has_issues: true
   has_projects: false
