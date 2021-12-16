@@ -1,8 +1,7 @@
 ---
-docsportal:
+docs_on_docs:
   default_branch: main
-  homepage: https://docs.otc-service.com
-  description: Main content for the documentation portal
+  description: Documentation on how to maintain documentation
   archived: false
   has_issues: true
   has_projects: false

@@ -1,8 +1,8 @@
 ---
-docsportal:
+otcbot:
   default_branch: main
-  homepage: https://docs.otc-service.com
-  description: Main content for the documentation portal
+  description: OTCbot
+  homepage: null
   archived: false
   has_issues: true
   has_projects: false
@@ -13,8 +13,6 @@ docsportal:
   allow_rebase_merge: false
   teams:
     - slug: "eco"
-      permission: "push"
-    - slug: "docs"
       permission: "push"
   branch_protections:
     - branch: "main"
