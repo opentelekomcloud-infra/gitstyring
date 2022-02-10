@@ -1,21 +1,29 @@
 ---
 - secret:
-    name: zuul_gitcontrol_vault
+    name: zuul_eco_gitcontrol_vault
     data:
-      vault_addr: "https://vault-lb.eco.tsi-dev.otc-service.com:8200"
-      role_id: 5d0e4151-23b3-23cf-e5ca-91a7f27622c7
-      secret_name: "secret/data/otcbot"
-      secret_id: !encrypted/pkcs1-oaep
-        - RlTPRexMLMV7wbIUfRjag6xypGO50F95D1q1z3O/rV0ECfQggTOC9kRBtII4KTsnbyfAG
-          QyVhHkJEg9Jin6mqU5A1eR9hKGiRLsVaaeuJfXwC5Sc4rMzHUbapjIvW3zJJ3oStJWGC5
-          urvYDCD7au0JIW4FLa5dvoUzdKJhW5AmSAoAkeVGvgeb7PbtFdDG7/g0vsIHDSWB5Aknh
-          QXpTwVMxKexo2gZs/c1Pyy6TJysHr1TrMf1YDDFeT+KWKXNscIXezH9SyCsFlf2XegBzF
-          N+k+gInIrkYuj8ZKdrdUjCWA6NrDi/XnQ9NzutBRZL1tubB0U5nATB22PHHVS0FfYVoO3
-          Dv8iokWgNFgw5E08BYhxFjmDLEP9AHTxBs8cXLR0TfDVIRRZzXQXXfRhVhoaJpAQFPR9W
-          EEB0O1vCYamD6/AhUdPvz/lYHo5RoXTQULNhGDzOTrgO0dRto3Ec+eiDcSDss3p9/e1FF
-          VU3GyPfTV8M1J75Saz9boeNN2Zwy9sDIMPXZdN7Ym5unD8YSjuP83F5jTLgFW6P8jHbde
-          4OXaWz7sYDWUE8/eypY4RvOiKD958jLNgQtCvAv070N2/e5vsIs6yUXsvONOnDx/tYKnY
-          leWyW/umcR+bQtnJUfr/2LWZ1hbHSZxIphLgerCZje1RBZ1eky29x/BMCszvYg=
+      vault_role_id: !encrypted/pkcs1-oaep
+        - HTfexJfheN+aFPwMKv5CePvpRBK71kYojpYHaA4nV3NiPSYhIG6ESPolLN0HNSH8wQOeY
+          0GKJtSnb9at0hVGxbbTl5izZ5XT7+eB9aHPAdlsGYPzhrnFPbnFEEaGRdLezouK9gZieX
+          rw2N/k8w1g3zhW6fp2OQhbA08jtCR+qCi/NbgQHpjlto8YoBaqfF4yP6jU4+mV9wGJstF
+          pcFJ6qPr8SUkFUL7rvqSUWW6zpyWth80WNZKva8QtM9hPO6JgoIH952LVLbmWts4GsWmT
+          3XsY8ZPKyyj1ouYNqE0EttGzijmQM6eQpNqVO6HuHc37XthkbBYMQUFhWZXFWK9CQkdu8
+          AT33hMKgzT86NmFuGQGOy2Tz0+7sp844M3Jn6NTz5ScUUovrM7mSAN+Y2yPa1YqTLeQZZ
+          6ML4M7BBBMJAqHvaHQL92MRvSmdkrJe+CwJ4aPoRW4LRxAqFjhywcZnKjbYs+/+vJzAa5
+          8W6j7MaNp4o3KNLXMGhjmxHgc4oQx0xL7NUN4kNL7M7+4VVCvo6A9ICXJIBpvQdjXonNI
+          MWHbdUF9O97V0ldY9kAjn8VWBZvx7TUFNuCHHfP7zlhltMJS+x5Cbv0NOm+FwmzFy7ujQ
+          XDnf9mzfzcvHQA10pqdpeqNKLXjT7O3zYfNnkyUsIitHh9bX+2o/zFjQbwdQhA=
+      vault_token_path: !encrypted/pkcs1-oaep
+        - VDMbPbqjBP5da0U1WVH5Q9kC9ZCr5pyG1XUe5QjKTlFDgyT/s5xofwjg0xYtzpw1ZJopH
+          +Cz/8r4zjlQJeyITbkxVKKe3PeQRQD5mpCGxbRpWdfrqUIc7YqHDguM08FywqyZQ2+1+8
+          hchT/SCAQsgCZIwzqx8e0sMKYRS6yZV4NV4ybAJlYh26lIOaCLCy6yCba6Q7127wVGes+
+          mDu2etXqcr4RwzeAvSzGu/8t6bAXSvirMor2Kjgb6a2eI1Hlgf0taV3OG4q+o/46HIF4Q
+          CS1EZ0+iSCyEvV3JzHD09pdA4dF10l1LHkKF3zVaySgWE0gjfGFoIECqzyu1JuBgCoHoi
+          ZbokpCtdyHFfBEzQnMWjyJ36tVQsESTo0PynFzU3XjESZ5ng2Y9/fNTqVDtSjYdmMQhww
+          77sWwki15yXkkvU6G4sFwRFMsdx2dNqVJnwVA7OIrL0NrYP/fTaoHxbpQ9iR1+SV6uIZE
+          ulzVbB8fz14wQlC6hH/EsxMn0kvHJt+kwAfFtg3DSBiAY+MmLTUl1O1JlBSTJSeJt+G5K
+          aeyat7W3jLel/PR7MkPVXlM6LJoRkOpm1fJ+jFbLoQ3FZ7JJZb1/SPVkfPJ1WxN9lYyNZ
+          E4ThIH78dyuEG7IORCrrewLsltLvQrFNeAhQJjW2lXlx8CRgeWhNaJM9K35v/c=
 
 - project:
     merge-mode: squash-merge
@@ -35,8 +43,8 @@
       jobs:
         - gitcontrol-apply-dry-run: &gitcontrol_vars
             secrets:
-              - secret: zuul_gitcontrol_vault
-                name: zuul_gitcontrol_vault
+              - secret: zuul_eco_gitcontrol_vault
+                name: zuul_vault
                 pass-to-parent: true
     gate:
       jobs:
