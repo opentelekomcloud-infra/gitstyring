@@ -1,0 +1,20 @@
+---
+sphinx-opensearch:
+  default_branch: main
+  description: |
+    Python tool to index Sphinx-based documentations to Opensearch or Elasticsearch.
+  homepage: https://docs.otc-service.com/python-sphinxsearch
+  archived: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    - slug: "eco"
+      permission: "push"
+  branch_protections:
+    - branch: "main"
+      template: "zuul"
