@@ -49,9 +49,10 @@
     gate:
       jobs:
         - otc-tox-linters
-        - gitcontrol-apply-dry-run:
-            <<: *gitcontrol_vars
+        - gitcontrol-apply-dry-run: *gitcontrol_vars
     deploy:
       jobs:
-        - gitcontrol-apply:
-            <<: *gitcontrol_vars
+        - gitcontrol-apply: *gitcontrol_vars
+    periodic:
+      jobs:
+        - gitcontrol-apply: *gitcontrol_vars
