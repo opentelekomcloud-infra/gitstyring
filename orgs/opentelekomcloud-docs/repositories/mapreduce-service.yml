@@ -14,6 +14,8 @@ mapreduce-service:
   teams:
     - slug: "docs"
       permission: "push"
+    - slug: "big-data-ai"
+      permission: "triage"
   branch_protections:
     - branch: "main"
       template: "zuul"
