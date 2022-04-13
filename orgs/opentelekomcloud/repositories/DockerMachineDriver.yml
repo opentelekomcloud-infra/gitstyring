@@ -14,6 +14,8 @@ DockerMachineDriver:
   teams:
     - slug: "eco"
       permission: "push"
+    - slug: "gophers"
+      permission: "push"
   branch_protections:
     - branch: "master"
       template: "zuul"
