@@ -14,6 +14,8 @@ ui-cluster-driver-otc:
   teams:
     - slug: "eco"
       permission: "push"
+    - slug: "jsers"
+      permission: "push"
   branch_protections:
     - branch: "devel"
       template: "zuul"
