@@ -14,7 +14,9 @@ modelarts:
   teams:
     - slug: "docs"
       permission: "push"
-    - slug: "big-data-ai"
+    - slug: "big-data-ai-write"
+      permission: "write"
+    - slug: "big-data-ai-triage"
       permission: "triage"
   branch_protections:
     - branch: "main"
