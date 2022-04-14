@@ -4,7 +4,7 @@ cloud-provider-opentelekomcloud:
   description: "Kubernetes Controller Manager is an external cloud controller
     manager for running kubernetes in a OpenTelekomCloud"
   homepage: null
-  archived: false
+  archived: true
   has_issues: true
   has_projects: false
   has_wiki: false
