@@ -15,7 +15,7 @@ modelarts:
     - slug: "docs"
       permission: "push"
     - slug: "big-data-ai-write"
-      permission: "write"
+      permission: "push"
     - slug: "big-data-ai-triage"
       permission: "triage"
   branch_protections:
