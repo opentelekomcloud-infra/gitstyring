@@ -1,0 +1,19 @@
+---
+dns-escape-proxy:
+  default_branch: main
+  description: "A workaround to escape system DNS restrictions and resolve address using some DoH service."
+  homepage: "https://github.com/opentelekomcloud-infra/dns-escape-proxy#readme"
+  archived: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    - slug: "eco"
+      permission: "push"
+  branch_protections:
+    - branch: "main"
+      template: "zuul"
