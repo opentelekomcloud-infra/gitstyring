@@ -1,5 +1,5 @@
 ---
-cloudmon-metrcs:
+cloudmon-metrics:
   default_branch: main
   description: |
     CloudMon Metrics processor
