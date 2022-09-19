@@ -1,8 +1,7 @@
 ---
-ansible-collection-apimon:
+apimon:
   default_branch: main
-  description: "Ansible collection containing roles/playbooks related
-    to APImon project"
+  description: Component of the API-Monitoring to schedule and execute tasks
   homepage: null
   archived: false
   has_issues: true
@@ -13,7 +12,7 @@ ansible-collection-apimon:
   allow_squash_merge: true
   allow_rebase_merge: false
   teams:
-    - slug: "eco"
+    - slug: "stackmon"
       permission: "push"
   branch_protections:
     - branch: "main"

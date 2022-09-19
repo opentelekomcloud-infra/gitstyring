@@ -1,8 +1,8 @@
 ---
-cloudmon-metrics:
+cloudmon-plugin-loadbalancer:
   default_branch: main
   description: |
-    CloudMon Metrics processor
+    CloudMon plugin to monitor Load Balancer service
   homepage: null
   archived: false
   has_issues: true
@@ -13,7 +13,7 @@ cloudmon-metrics:
   allow_squash_merge: true
   allow_rebase_merge: false
   teams:
-    - slug: "eco"
+    - slug: "stackmon"
       permission: "push"
   branch_protections:
     - branch: "main"
