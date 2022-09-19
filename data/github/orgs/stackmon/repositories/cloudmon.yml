@@ -1,7 +1,8 @@
 ---
-apimon:
+cloudmon:
   default_branch: main
-  description: Component of the API-Monitoring to schedule and execute tasks
+  description: |
+    CloudMon Manager
   homepage: null
   archived: false
   has_issues: true
@@ -12,7 +13,7 @@ apimon:
   allow_squash_merge: true
   allow_rebase_merge: false
   teams:
-    - slug: "eco"
+    - slug: "stackmon"
       permission: "push"
   branch_protections:
     - branch: "main"

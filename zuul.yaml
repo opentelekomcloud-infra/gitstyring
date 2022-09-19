@@ -25,9 +25,11 @@
           aeyat7W3jLel/PR7MkPVXlM6LJoRkOpm1fJ+jFbLoQ3FZ7JJZb1/SPVkfPJ1WxN9lYyNZ
           E4ThIH78dyuEG7IORCrrewLsltLvQrFNeAhQJjW2lXlx8CRgeWhNaJM9K35v/c=
 
-- project:
-    merge-mode: squash-merge
-    default-branch: main
+- job:
+    name: gitcontrol-apply-gh
+    parent: gitcontrol-apply
+    files:
+      - data/github/.*
     vars:
       gitcontrol_organizations:
         - opentelekomcloud
@@ -35,24 +37,35 @@
         - opentelekomcloud-docs
         - opentelekomcloud-infra
         - terraform-opentelekomcloud-modules
-      gitcontrol_root_dir: "{{ ansible_user_dir }}/{{ zuul.project.src_dir }}/orgs"
+        - stackmon
+      gitcontrol_root_dir: "{{ ansible_user_dir }}/{{ zuul.project.src_dir }}/data/github/orgs"
+      gitcontrol_git_type: github
+    secrets:
+      - secret: zuul_eco_gitcontrol_vault
+        name: zuul_vault
+        pass-to-parent: true
+
+- job:
+    name: gitcontrol-apply-gh-dry-run
+    parent: gitcontrol-apply-gh
+    vars:
+      check_mode: true
+
+- project:
+    merge-mode: squash-merge
+    default-branch: main
     check:
       jobs:
         - otc-tox-linters
     check-post:
       jobs:
-        - gitcontrol-apply-dry-run: &gitcontrol_vars
-            secrets:
-              - secret: zuul_eco_gitcontrol_vault
-                name: zuul_vault
-                pass-to-parent: true
+        - gitcontrol-apply-gh-dry-run
     gate:
       jobs:
-        - otc-tox-linters
-        - gitcontrol-apply-dry-run: *gitcontrol_vars
+        - gitcontrol-apply-gh-dry-run
     deploy:
       jobs:
-        - gitcontrol-apply: *gitcontrol_vars
+        - gitcontrol-apply-gh
     periodic:
       jobs:
-        - gitcontrol-apply: *gitcontrol_vars
+        - gitcontrol-apply-gh
