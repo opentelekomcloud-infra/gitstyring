@@ -1,23 +1,18 @@
----
 elastic-cloud-server:
-  default_branch: main
-  description: Open Telekom Cloud ECS Service docs
-  homepage: null
+  allow_merge_commit: false
+  allow_rebase_merge: false
+  allow_squash_merge: true
   archived: false
+  branch_protections:
+  - branch: main
+    template: zuul
+  default_branch: main
+  delete_branch_on_merge: true
+  description: Open Telekom Cloud Elastic Cloud Server Service docs
   has_issues: true
   has_projects: false
   has_wiki: false
-  delete_branch_on_merge: true
-  allow_merge_commit: false
-  allow_squash_merge: true
-  allow_rebase_merge: false
+  homepage: null
   teams:
-    - slug: "docs"
-      permission: "push"
-    - slug: "compute-write"
-      permission: "push"
-    - slug: "compute-triage"
-      permission: "triage"
-  branch_protections:
-    - branch: "main"
-      template: "zuul"
+  - permission: push
+    slug: docs-compute-rw

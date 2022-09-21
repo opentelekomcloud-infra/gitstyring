@@ -1,22 +1,18 @@
----
 enterprise-dashboard:
-  default_branch: main
-  description: Enterprise Dashboard
-  homepage: null
+  allow_merge_commit: false
+  allow_rebase_merge: false
+  allow_squash_merge: true
   archived: false
+  branch_protections:
+  - branch: main
+    template: zuul
+  default_branch: main
+  delete_branch_on_merge: true
+  description: Open Telekom Cloud Enterprise Dashboard Service docs
   has_issues: true
   has_projects: false
   has_wiki: false
-  delete_branch_on_merge: true
-  allow_merge_commit: false
-  allow_squash_merge: true
-  allow_rebase_merge: false
+  homepage: null
   teams:
-    - slug: "docs"
-      permission: "push"
-    - slug: "edb"
-      permission: "push"
-  collaborators: []
-  branch_protections:
-    - branch: "main"
-      template: "zuul"
+  - permission: push
+    slug: docs-dashboard-rw

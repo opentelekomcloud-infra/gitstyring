@@ -1,4 +1,4 @@
-simple-message-notification:
+data-replication-service:
   allow_merge_commit: false
   allow_rebase_merge: false
   allow_squash_merge: true
@@ -8,11 +8,11 @@ simple-message-notification:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Simple Message Notification Service docs
+  description: Open Telekom Cloud Data Replication Service Service docs
   has_issues: true
   has_projects: false
   has_wiki: false
   homepage: null
   teams:
   - permission: push
-    slug: docs-orchestration-rw
+    slug: docs-database-rw

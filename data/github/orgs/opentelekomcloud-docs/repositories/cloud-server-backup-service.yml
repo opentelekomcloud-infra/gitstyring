@@ -1,19 +1,18 @@
----
 cloud-server-backup-service:
-  default_branch: main
-  description: Open Telekom Cloud CSBS Service docs
-  homepage: null
+  allow_merge_commit: false
+  allow_rebase_merge: false
+  allow_squash_merge: true
   archived: false
+  branch_protections:
+  - branch: main
+    template: zuul
+  default_branch: main
+  delete_branch_on_merge: true
+  description: Open Telekom Cloud Cloud Server Backup Service Service docs
   has_issues: true
   has_projects: false
   has_wiki: false
-  delete_branch_on_merge: true
-  allow_merge_commit: false
-  allow_squash_merge: true
-  allow_rebase_merge: false
+  homepage: null
   teams:
-    - slug: "docs"
-      permission: "push"
-  branch_protections:
-    - branch: "main"
-      template: "zuul"
+  - permission: push
+    slug: docs-storage-rw
