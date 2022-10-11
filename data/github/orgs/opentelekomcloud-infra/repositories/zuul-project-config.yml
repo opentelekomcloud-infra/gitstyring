@@ -1,6 +1,6 @@
 ---
 zuul-project-config:
-  default_branch: master
+  default_branch: main
   description: Zuul configuration for the Eco tenant
   homepage: null
   archived: false
@@ -15,5 +15,5 @@ zuul-project-config:
     - slug: "eco"
       permission: "push"
   branch_protections:
-    - branch: "master"
+    - branch: "main"
       template: "zuul"
