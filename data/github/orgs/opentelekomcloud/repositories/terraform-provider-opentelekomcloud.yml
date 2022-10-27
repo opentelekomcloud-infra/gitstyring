@@ -18,4 +18,4 @@ terraform-provider-opentelekomcloud:
       permission: "push"
   branch_protections:
     - branch: "devel"
-      template: "zuul"
+      template: "zuul_2r"
