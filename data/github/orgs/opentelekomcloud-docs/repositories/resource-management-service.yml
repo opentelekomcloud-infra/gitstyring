@@ -1,4 +1,4 @@
-cloud-eye:
+resource-management-service:
   allow_merge_commit: false
   allow_rebase_merge: false
   allow_squash_merge: true
@@ -9,7 +9,7 @@ cloud-eye:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Cloud Eye Service docs
+  description: Open Telekom Cloud Resource Management Service Service docs
   has_issues: true
   has_projects: false
   has_wiki: false

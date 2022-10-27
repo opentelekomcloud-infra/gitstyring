@@ -2,6 +2,7 @@ data-replication-service:
   allow_merge_commit: false
   allow_rebase_merge: false
   allow_squash_merge: true
+  allow_update_branch: true
   archived: false
   branch_protections:
   - branch: main
