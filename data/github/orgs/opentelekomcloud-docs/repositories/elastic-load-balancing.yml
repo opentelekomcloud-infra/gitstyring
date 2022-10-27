@@ -9,7 +9,7 @@ elastic-load-balancing:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Elastic Load Balancing Service docs
+  description: Open Telekom Cloud Elastic Load Balancing docs
   has_issues: true
   has_projects: false
   has_wiki: false

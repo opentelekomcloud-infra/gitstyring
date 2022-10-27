@@ -9,7 +9,7 @@ content-delivery-network:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Content Delivery Network (Akamai) Service docs
+  description: Open Telekom Cloud Content Delivery Network (Akamai) docs
   has_issues: true
   has_projects: false
   has_wiki: false

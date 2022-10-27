@@ -10,7 +10,7 @@ gaussdb-mysql:
   default_branch: main
   delete_branch_on_merge: true
   description: Open Telekom Cloud GaussDB Enterprise-class Distributed Database compatible
-    with MySQL Service docs
+    with MySQL docs
   has_issues: true
   has_projects: false
   has_wiki: false

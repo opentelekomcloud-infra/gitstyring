@@ -9,7 +9,7 @@ direct-connect:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Direct Connect Service docs
+  description: Open Telekom Cloud Direct Connect docs
   has_issues: true
   has_projects: false
   has_wiki: false

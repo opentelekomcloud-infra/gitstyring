@@ -9,7 +9,7 @@ vpc-endpoint:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud VPC Endpoint Service docs
+  description: Open Telekom Cloud VPC Endpoint docs
   has_issues: true
   has_projects: false
   has_wiki: false

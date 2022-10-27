@@ -9,7 +9,7 @@ elastic-cloud-server:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Elastic Cloud Server Service docs
+  description: Open Telekom Cloud Elastic Cloud Server docs
   has_issues: true
   has_projects: false
   has_wiki: false

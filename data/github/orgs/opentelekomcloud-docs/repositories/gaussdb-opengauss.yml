@@ -10,7 +10,7 @@ gaussdb-opengauss:
   default_branch: main
   delete_branch_on_merge: true
   description: Open Telekom Cloud GaussDB Enterprise-grade Relational Database on
-    the openGauss ecosystem Service docs
+    the openGauss ecosystem docs
   has_issues: true
   has_projects: false
   has_wiki: false

@@ -9,7 +9,7 @@ log-tank-service:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Log Tank Service Service docs
+  description: Open Telekom Cloud Log Tank Service docs
   has_issues: true
   has_projects: false
   has_wiki: false

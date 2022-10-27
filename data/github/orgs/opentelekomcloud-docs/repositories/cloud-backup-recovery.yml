@@ -9,7 +9,7 @@ cloud-backup-recovery:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Cloud Backup and Recovery Service docs
+  description: Open Telekom Cloud Cloud Backup and Recovery docs
   has_issues: true
   has_projects: false
   has_wiki: false

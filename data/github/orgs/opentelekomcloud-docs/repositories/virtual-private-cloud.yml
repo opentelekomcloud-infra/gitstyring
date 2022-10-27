@@ -9,7 +9,7 @@ virtual-private-cloud:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Virtual Private Cloud Service docs
+  description: Open Telekom Cloud Virtual Private Cloud docs
   has_issues: true
   has_projects: false
   has_wiki: false
