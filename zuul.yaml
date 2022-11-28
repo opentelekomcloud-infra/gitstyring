@@ -59,10 +59,10 @@
         - otc-tox-linters
     check-post:
       jobs:
-        - otc-tox-linters
         - gitcontrol-apply-gh-dry-run
     gate:
       jobs:
+        - otc-tox-linters
         - gitcontrol-apply-gh-dry-run
     deploy:
       jobs:
