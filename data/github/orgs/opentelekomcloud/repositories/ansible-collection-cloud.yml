@@ -1,6 +1,6 @@
 ---
 ansible-collection-cloud:
-  default_branch: master
+  default_branch: main
   description: "Ansible modules for using with OTC
     (addition to the native OpenStack modules)"
   homepage: null
@@ -16,5 +16,5 @@ ansible-collection-cloud:
     - slug: "eco"
       permission: "push"
   branch_protections:
-    - branch: "master"
+    - branch: "main"
       template: "zuul"
