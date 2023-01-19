@@ -1,0 +1,29 @@
+secure-mail-gateway:
+  allow_merge_commit: false
+  allow_rebase_merge: false
+  allow_squash_merge: true
+  archived: false
+  branch_protections:
+  - approvals_whitelist_teams:
+    - docs-infra-team
+    - docs-network-rw
+    block_on_rejected_reviews: true
+    branch_name: main
+    dismiss_stale_approvals: true
+    enable_approvals_whitelist: true
+    enable_merge_whitelist: true
+    enable_push: false
+    merge_whitelist_usernames:
+    - zuul
+    status_check_contexts:
+    - gl/check
+  default_branch: main
+  default_delete_branch_after_merge: true
+  default_merge_style: squash
+  description: Open Telekom Cloud Secure Mail Gateway Service docs
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  homepage: null
+  teams:
+  - docs-network-rw
