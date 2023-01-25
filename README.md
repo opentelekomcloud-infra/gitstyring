@@ -1,3 +1,3 @@
 # Gitstyring
 
-Configuration for the GitHub management by [Ansible](github.com/opentelekomcloud/ansible-collection-gitcontrol).
+Configuration for the GitHub management by [Ansible](https://github.com/opentelekomcloud/ansible-collection-gitcontrol).
