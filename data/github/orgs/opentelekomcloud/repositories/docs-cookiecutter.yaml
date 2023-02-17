@@ -1,7 +1,7 @@
 ---
 docs-cookiecutter:
   default_branch: main
-  description: Cookiecutter template for an Open Teleko Cloud project
+  description: Cookiecutter template for an Open Telekom Cloud project
   homepage: null
   archived: false
   has_issues: true
