@@ -3,7 +3,7 @@ doc-exports:
   default_branch: main
   homepage: https://docs.otc-service.com
   description: Project to track and perform conversion of HTML docs to RST
-  archived: false
+  archived: true
   has_issues: true
   has_projects: false
   has_wiki: false
