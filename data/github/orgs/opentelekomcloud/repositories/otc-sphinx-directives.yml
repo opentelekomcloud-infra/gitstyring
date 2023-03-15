@@ -1,5 +1,5 @@
 ---
-otcdocstheme:
+otc-sphinx-directives:
   default_branch: main
   description: OpenTelekomCloud Sphinx Directives Library
   homepage: null
