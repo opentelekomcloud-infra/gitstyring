@@ -1,0 +1,21 @@
+---
+terraform-modules-opentelekomcloud:
+  default_branch: main
+  description: This repository helps to create an OpenTelekomCloud based cloud-native infrastructure landscape with different services like VPC, LoadBalancers, ECS and much more. 
+  homepage: https://registry.terraform.io/namespaces/opentelekomcloud
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    - slug: "eco"
+      permission: "push"
+    - slug: "gophers"
+      permission: "push"
+  branch_protections:
+    - branch: "devel"
+      template: "zuul"
