@@ -1,5 +1,5 @@
 ---
-grafana-docs-monitoring.:
+grafana-docs-monitoring:
   default_branch: main
   description: grafana-docs-monitoring
   homepage: null
