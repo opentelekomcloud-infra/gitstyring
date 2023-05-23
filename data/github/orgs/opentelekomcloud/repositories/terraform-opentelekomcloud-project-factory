@@ -1,5 +1,5 @@
 ---
-terraform-modules-opentelekomcloud:
+terraform-opentelekomcloud-project-factory:
   default_branch: main
   description: This repository helps to create an OpenTelekomCloud based cloud-native infrastructure landscape with different services like VPC, LoadBalancers, ECS and much more.
   homepage: https://registry.terraform.io/namespaces/opentelekomcloud
