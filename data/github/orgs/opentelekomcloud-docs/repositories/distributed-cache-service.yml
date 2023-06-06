@@ -16,4 +16,4 @@ distributed-cache-service:
   homepage: null
   teams:
   - permission: push
-    slug: docs-database-rw
+    slug: docs-orchestration-rw
