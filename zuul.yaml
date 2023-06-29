@@ -35,6 +35,7 @@
         - opentelekomcloud
         - opentelekomcloud-blueprints
         - opentelekomcloud-docs
+        - opentelekomcloud-docs-swiss
         - opentelekomcloud-infra
         - terraform-opentelekomcloud-modules
         - stackmon
