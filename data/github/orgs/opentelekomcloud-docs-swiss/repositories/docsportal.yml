@@ -1,7 +1,7 @@
 ---
 docsportal:
   default_branch: main
-  homepage: https://docs.otc.t-systems.com
+  homepage: https://docs.sc.otc.t-systems.com
   description: Main content for the documentation portal
   archived: false
   has_issues: true
