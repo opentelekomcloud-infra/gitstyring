@@ -15,6 +15,3 @@ bms-network-setup:
   teams:
     - slug: "imagefactory"
       permission: "push"
-  branch_protections:
-    - branch: "master"
-      template: "zuul"
