@@ -1,8 +1,7 @@
 ---
 sphinx-opensearch:
   default_branch: main
-  description: |
-    Python tool to index Sphinx-based documentations to Opensearch or Elasticsearch.
+  description: Python tool to index Sphinx-based documentations to Opensearch or Elasticsearch.
   homepage: https://docs.otc-service.com/sphinx-opensearch
   archived: false
   has_issues: true
