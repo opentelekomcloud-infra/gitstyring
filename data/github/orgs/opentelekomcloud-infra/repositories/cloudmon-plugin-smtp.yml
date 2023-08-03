@@ -1,8 +1,7 @@
 ---
 cloudmon-plugin-smtp:
   default_branch: main
-  description: |
-    CloudMon plugin to verify availability of SMTP servers
+  description: CloudMon plugin to verify availability of SMTP servers
   homepage: null
   archived: false
   has_issues: true

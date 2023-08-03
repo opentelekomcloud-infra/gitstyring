@@ -1,8 +1,7 @@
 ---
 status-dashboard:
   default_branch: main
-  description: |
-    CloudMon Status Dashboard with Flask
+  description: CloudMon Status Dashboard with Flask
   homepage: null
   archived: false
   has_issues: true

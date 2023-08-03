@@ -1,8 +1,7 @@
 ---
 cloudmon:
   default_branch: main
-  description: |
-    CloudMon Manager
+  description: CloudMon Manager
   homepage: null
   archived: false
   has_issues: true

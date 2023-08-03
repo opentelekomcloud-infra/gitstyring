@@ -1,8 +1,7 @@
 ---
 otc-status-dashboard:
   default_branch: main
-  description: |
-    Open Telekom Cloud customization for CloudMon Status Dashboard
+  description: Open Telekom Cloud customization for CloudMon Status Dashboard
   homepage: null
   archived: false
   has_issues: true
