@@ -1,8 +1,7 @@
 ---
 cloudmon-plugin-loadbalancer:
   default_branch: main
-  description: |
-    CloudMon plugin to monitor Load Balancer service
+  description: CloudMon plugin to monitor Load Balancer service
   homepage: null
   archived: false
   has_issues: true

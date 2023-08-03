@@ -1,8 +1,7 @@
 ---
 metrics-processor:
   default_branch: main
-  description: |
-    CloudMon Metrics processor
+  description: CloudMon Metrics processor
   homepage: null
   archived: false
   has_issues: true

@@ -1,8 +1,7 @@
 ---
 ansible-collection-infra:
   default_branch: main
-  description: |
-    Ansible collection for the Infrastructure needs of the Open Telekom Cloud
+  description: Ansible collection for the Infrastructure needs of the Open Telekom Cloud
   homepage: null
   archived: false
   has_issues: true
