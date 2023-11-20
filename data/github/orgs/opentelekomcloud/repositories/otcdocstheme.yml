@@ -17,3 +17,5 @@ otcdocstheme:
   branch_protections:
     - branch: "main"
       template: "zuul"
+    - branch: "legacy"
+      template: "zuul"
