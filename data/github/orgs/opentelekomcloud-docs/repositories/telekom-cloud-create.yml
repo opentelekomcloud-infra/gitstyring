@@ -18,3 +18,5 @@ telekom-cloud-create:
   teams:
   - permission: push
     slug: topology-designer-rw
+  - permission: admin
+    slug: docs
