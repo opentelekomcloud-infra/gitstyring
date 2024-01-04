@@ -1,5 +1,5 @@
 ---
-telekom-cloud-create:
+cloud-create:
   allow_merge_commit: false
   allow_rebase_merge: false
   allow_squash_merge: true
@@ -10,7 +10,7 @@ telekom-cloud-create:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Telekom Cloud Create docs
+  description: Open Telekom Cloud Cloud Create docs
   has_issues: true
   has_projects: false
   has_wiki: false
