@@ -17,3 +17,5 @@ image-management-service:
   teams:
   - permission: push
     slug: docs-compute-rw
+  - permission: push
+    slug: docs-imagefactory-rw
