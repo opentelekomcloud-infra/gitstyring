@@ -3,7 +3,7 @@ resource-template-service:
   allow_rebase_merge: false
   allow_squash_merge: true
   allow_update_branch: true
-  archived: false
+  archived: true
   branch_protections:
   - branch: main
     template: zuul
