@@ -12,7 +12,7 @@ docs_on_docs:
   allow_rebase_merge: false
   teams:
     - slug: "eco"
-      permission: "push"
+      permission: "maintain"
     - slug: "docs"
       permission: "push"
   branch_protections:
