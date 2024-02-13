@@ -1,23 +1,20 @@
 ---
 security:
-  default_branch: main
-  description: Open Telekom Cloud Seucurity relevant docs
-  homepage: null
+  allow_merge_commit: false
+  allow_rebase_merge: false
+  allow_squash_merge: true
+  allow_update_branch: true
   archived: false
+  branch_protections:
+  - branch: main
+    template: zuul
+  default_branch: main
+  delete_branch_on_merge: true
+  description: Security stuff
   has_issues: true
   has_projects: false
   has_wiki: false
-  delete_branch_on_merge: true
-  allow_merge_commit: false
-  allow_squash_merge: true
-  allow_rebase_merge: false
+  homepage: null
   teams:
-    - slug: "docs"
-      permission: "push"
-    - slug: "security-triage"
-      permission: "triage"
-    - slug: "security-write"
-      permission: "push"
-  branch_protections:
-    - branch: "main"
-      template: "zuul"
+  - permission: push
+    slug: docs-eco-rw
