@@ -11,7 +11,7 @@ architecture-center:
   delete_branch_on_merge: true
   description: Open Telekom Cloud Architecture Center docs
   has_issues: true
-  has_projects: false
+  has_projects: true
   has_wiki: false
   homepage: null
   teams:
