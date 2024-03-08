@@ -16,4 +16,4 @@ api-gateway:
   homepage: null
   teams:
   - permission: push
-    slug: docs-bigdata-ai-rw
+    slug: docs-orchestration-rw
