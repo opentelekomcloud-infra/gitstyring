@@ -20,3 +20,12 @@ branch_protection_templates:
     required_linear_history: false
     allow_force_pushes: false
     allow_deletions: false
+  default:
+    enforce_admins: true
+    required_pull_request_reviews:
+      dismissal_restrictions:
+        users: []
+        teams: []
+      dismiss_stale_reviews: true
+      require_code_owner_reviews: false
+      required_approving_review_count: 1

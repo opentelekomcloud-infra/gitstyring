@@ -16,3 +16,4 @@ demo-repository:
       permission: "push"
   branch_protections:
     - branch: "main"
+      template: "default"
