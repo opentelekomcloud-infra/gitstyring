@@ -14,6 +14,3 @@
   teams:
     - slug: "eco"
       permission: "push"
-  branch_protections:
-    - branch: "main"
-      template: "default"

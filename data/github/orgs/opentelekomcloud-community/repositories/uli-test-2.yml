@@ -20,7 +20,4 @@ uli-test-2:
       permission: "push"
     - slug: "otc-community"
       permission: "push"
-  branch_protections:
-    - branch: "main"
-      template: "default"
 
