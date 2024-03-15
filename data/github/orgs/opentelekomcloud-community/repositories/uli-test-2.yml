@@ -1,0 +1,23 @@
+---
+uli-test-2:
+  default_branch: main
+  description: Ein Repo von Uli zum Test
+  homepage: null
+  archived: true
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  members:
+    - login: Uli Schneider
+      name: uli-schneider
+      role: admin
+  teams:
+    - slug: "eco"
+      permission: "push"
+    - slug: "otc-community"
+      permission: "push"
+
