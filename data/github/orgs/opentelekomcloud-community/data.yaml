@@ -21,6 +21,7 @@ branch_protection_templates:
     allow_force_pushes: false
     allow_deletions: false
   default:
+    required_status_checks: {}
     enforce_admins: true
     required_pull_request_reviews:
       dismissal_restrictions:
