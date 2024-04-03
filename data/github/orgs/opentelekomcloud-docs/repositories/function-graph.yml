@@ -9,7 +9,7 @@ function-graph:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Elastic Cloud Server docs
+  description: Open Telekom Cloud Function Graph docs
   has_issues: true
   has_projects: false
   has_wiki: false
