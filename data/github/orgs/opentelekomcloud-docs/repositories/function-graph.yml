@@ -17,3 +17,6 @@ function-graph:
   teams:
   - permission: push
     slug: docs-compute-rw
+  - permission: push
+    slug: docs-orchestration-rw
+
