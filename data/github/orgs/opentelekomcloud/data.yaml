@@ -27,7 +27,7 @@ branch_protection_templates:
       strict: false
       checks:
         - context: "eco/check"
-          app_id: 11628
+          app_id: 15368
     enforce_admins: true
     required_pull_request_reviews:
       dismissal_restrictions:
