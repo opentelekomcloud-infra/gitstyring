@@ -1,6 +1,6 @@
 ---
 globalmon:
-  default_Granch: main
+  default_branch: main
   description: Global URL monitoring application.
   homepage: null
   archived: false
