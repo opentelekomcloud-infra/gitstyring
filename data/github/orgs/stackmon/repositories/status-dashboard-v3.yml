@@ -1,5 +1,5 @@
 ---
-status-dashboard:
+status-dashboard-v3:
   default_branch: main
   description: CloudMon Status Dashboard v3
   homepage: null
