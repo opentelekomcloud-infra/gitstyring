@@ -16,4 +16,4 @@ api-usage:
   homepage: null
   teams:
   - permission: push
-    slug: eco
+    slug: docs-eco-rw
