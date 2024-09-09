@@ -1,3 +1,4 @@
+---
 api-usage:
   allow_merge_commit: false
   allow_rebase_merge: false
@@ -9,7 +10,7 @@ api-usage:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud API Usage docs
+  description: Open Telekom Cloud API Usage Guidelines docs
   has_issues: true
   has_projects: false
   has_wiki: false
