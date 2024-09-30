@@ -10,7 +10,7 @@ StatusDashboard-V3:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: 
+  description: status dashboard ng frontend
   has_issues: true
   has_projects: false
   has_wiki: false
