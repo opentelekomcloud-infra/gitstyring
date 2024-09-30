@@ -14,4 +14,7 @@ cloud-provider-opentelekomcloud:
   allow_rebase_merge: false
   teams:
     - slug: "eco"
-      permission: "maintain"
+      permission: "push"
+  branch_protections:
+    - branch: "master"
+      template: "zuul"
