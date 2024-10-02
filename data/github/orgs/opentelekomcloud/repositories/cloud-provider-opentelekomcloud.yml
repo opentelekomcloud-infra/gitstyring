@@ -17,4 +17,4 @@ cloud-provider-opentelekomcloud:
       permission: "push"
   branch_protections:
     - branch: "master"
-      template: "zuul"
+      template: "no_zuul"
