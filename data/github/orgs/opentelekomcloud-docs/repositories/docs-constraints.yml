@@ -1,5 +1,5 @@
 ---
-doc-constraints:
+docs-constraints:
   default_branch: main
   homepage: https://docs.otc.t-systems.com
   description: Documentation constraints for Sphinx build process
