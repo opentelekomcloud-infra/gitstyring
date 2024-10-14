@@ -2,10 +2,10 @@
 LoveOTC:
   default_branch: master
   description: "An online shop for OTC members to order merchandise."
-  homepage: "https://shop.eco.tsi-dev.otc-service.com"
-  archived: false
+  homepage: null
+  archived: true
   has_issues: true
-  has_projects: true
+  has_projects: false
   has_wiki: false
   delete_branch_on_merge: true
   allow_merge_commit: false
