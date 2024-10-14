@@ -1,0 +1,21 @@
+---
+doc-constraints:
+  default_branch: main
+  homepage: https://docs.otc.t-systems.com
+  description: Documentation constraints for Sphinx build process
+  archived: false
+  has_issues: true
+  has_projects: false
+  has_wiki: true
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    - slug: "eco"
+      permission: "push"
+    - slug: "docs"
+      permission: "push"
+  branch_protections:
+    - branch: "main"
+      template: "zuul"
