@@ -1,6 +1,6 @@
 ---
 StatusDashboard-V3:
-  default_branch: master
+  default_branch: main
   description: "Status Dashboard NG Frontend."
   homepage: "https://sd3.eco.tsi-dev.otc-service.com/"
   archived: false
