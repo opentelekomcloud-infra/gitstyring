@@ -1,0 +1,16 @@
+---
+StatusDashboard-V3:
+  default_branch: master
+  description: "Status Dashboard NG Frontend."
+  homepage: "https://sd3.eco.tsi-dev.otc-service.com/"
+  archived: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  teams:
+    - slug: "eco"
+      permission: "maintain"
