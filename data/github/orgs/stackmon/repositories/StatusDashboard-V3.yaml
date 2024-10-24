@@ -12,5 +12,5 @@ StatusDashboard-V3:
   allow_squash_merge: true
   allow_rebase_merge: false
   teams:
-    - slug: "eco"
-      permission: "maintain"
+    - slug: "stackmon"
+      permission: "push"
