@@ -83,7 +83,7 @@ branch_protection_templates:
       users: []
       teams: []
     required_linear_history: false
-    allow_force_pushes: false                                                                                                                                                                                      
+    allow_force_pushes: false
     allow_deletions: false
 
 
