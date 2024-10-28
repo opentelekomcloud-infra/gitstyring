@@ -67,8 +67,6 @@ branch_protection_templates:
     allow_force_pushes: false
     allow_deletions: false
   code_owner_approvers:
-    required_status_checks:
-      strict: false
     enforce_admins: true
     required_pull_request_reviews:
       dismissal_restrictions:
