@@ -1,0 +1,21 @@
+---
+docs-next:
+  default_branch: main
+  description: "Open Telekom Cloud Architecture Center"
+  homepage: null
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  delete_branch_on_merge: true
+  allow_merge_commit: true
+  allow_squash_merge: true
+  allow_rebase_merge: true
+  teams:
+    - slug: "ac-content-creator"
+      permission: "push"
+    - slug: "ac-content-reviewer"
+      permission: "push"
+  branch_protections:
+    - branch: "main"
+      template: "code_owner_approvers"
