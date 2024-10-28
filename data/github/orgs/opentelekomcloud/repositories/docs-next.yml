@@ -18,4 +18,4 @@ docs-next:
       permission: "push"
   branch_protections:
     - branch: "main"
-      template: "no_zuul"
+      template: "gh_ac"
