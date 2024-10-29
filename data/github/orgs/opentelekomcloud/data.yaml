@@ -69,8 +69,8 @@ branch_protection_templates:
   gh_ac:
     required_status_checks:
       strict: false
-      checks:
-        - context: "deploy-preview"
+      contexts:
+        - deploy-preview
     enforce_admins: true
     required_pull_request_reviews:
       dismissal_restrictions:
