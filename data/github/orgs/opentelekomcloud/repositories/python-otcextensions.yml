@@ -1,6 +1,6 @@
 ---
 python-otcextensions:
-  default_branch: master
+  default_branch: main
   description: "Extension of the OpenStackSDK && OpenStackClient
     with OpenTelekomCloud services"
   homepage: https://docs.otc-service.com/python-otcextensions
