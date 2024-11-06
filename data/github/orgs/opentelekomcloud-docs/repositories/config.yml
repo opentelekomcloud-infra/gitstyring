@@ -16,4 +16,4 @@ config:
   homepage: null
   teams:
   - permission: push
-    slug: docs-orchestration-rw
+    slug: docs-cms-rw

@@ -17,4 +17,4 @@ application-operations-management-2:
   homepage: null
   teams:
   - permission: push
-    slug: docs-orchestration-rw
+    slug: docs-paas-rw
