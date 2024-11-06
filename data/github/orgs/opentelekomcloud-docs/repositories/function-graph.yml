@@ -18,5 +18,5 @@ function-graph:
   - permission: push
     slug: docs-compute-rw
   - permission: push
-    slug: docs-orchestration-rw
+    slug: docs-paas-rw
 

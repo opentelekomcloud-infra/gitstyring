@@ -16,4 +16,4 @@ log-tank-service:
   homepage: null
   teams:
   - permission: push
-    slug: docs-orchestration-rw
+    slug: docs-paas-rw
