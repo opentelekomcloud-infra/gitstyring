@@ -22,7 +22,7 @@ branch_protection_templates:
     required_linear_history: false
     allow_force_pushes: false
     allow_deletions: false
-  no_zuul:
+  github-actions:
     required_status_checks:
       strict: false
       checks:
