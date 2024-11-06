@@ -18,4 +18,4 @@ docs-next:
       permission: "push"
   branch_protections:
     - branch: "main"
-      template: "gh_ac"
+      template: "github-actions"

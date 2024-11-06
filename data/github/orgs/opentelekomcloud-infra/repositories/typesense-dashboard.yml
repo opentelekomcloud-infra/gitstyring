@@ -16,4 +16,4 @@ typesense-dashboard:
       permission: "maintain"
   branch_protections:
     - branch: "main"
-      template: "no_zuul"
+      template: "github-actions"
