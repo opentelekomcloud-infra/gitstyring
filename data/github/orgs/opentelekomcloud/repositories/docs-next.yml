@@ -16,6 +16,10 @@ docs-next:
       permission: "push"
     - slug: "ac-content-reviewer"
       permission: "push"
+  collaborators:
+    admin:
+      - akyriako
+      - tischrei
   branch_protections:
     - branch: "main"
       template: "github-actions"
