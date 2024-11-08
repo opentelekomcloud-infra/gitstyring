@@ -16,6 +16,11 @@ docs-next:
       permission: "push"
     - slug: "ac-content-reviewer"
       permission: "push"
+  collaborators:
+    - username: "akyriako"
+      permission: "admin"
+    - username: "tischrei"
+      permission: "admin"
   branch_protections:
     - branch: "main"
       template: "github-actions"
