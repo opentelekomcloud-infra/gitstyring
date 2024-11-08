@@ -14,6 +14,11 @@ docs-next-charts:
   teams:
     - slug: "ac-maintainers"
       permission: "maintain"
+  collaborators:
+    - username: "akyriako"
+      permission: "admin"
+    - username: "tischrei"
+      permission: "admin"
   branch_protections:
     - branch: "main"
       template: "zuul"
