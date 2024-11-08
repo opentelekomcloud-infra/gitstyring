@@ -17,9 +17,9 @@ docs-next:
     - slug: "ac-content-reviewer"
       permission: "push"
   collaborators:
-    - admin:
-      - akyriako
-      - tischrei
+      - admin:
+        - akyriako
+        - tischrei
   branch_protections:
     - branch: "main"
       template: "github-actions"
