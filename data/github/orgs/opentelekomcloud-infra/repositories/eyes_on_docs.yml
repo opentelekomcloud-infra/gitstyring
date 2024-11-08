@@ -7,7 +7,7 @@ eyes_on_docs:
   archived: false
   branch_protections:
   - branch: main
-    template: zuul
+    template: github-actions
   default_branch: main
   delete_branch_on_merge: true
   description: eyes on docs, hc monitoring
