@@ -17,7 +17,7 @@ docs-next:
     - slug: "ac-content-reviewer"
       permission: "push"
   collaborators:
-    admin:
+    - admin:
       - akyriako
       - tischrei
   branch_protections:
