@@ -21,4 +21,4 @@ docs-next-charts:
       permission: "admin"
   branch_protections:
     - branch: "main"
-      template: "zuul"
+      template: "github-actions"
