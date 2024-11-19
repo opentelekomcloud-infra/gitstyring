@@ -19,8 +19,6 @@ docs-next:
   collaborators:
     - username: "akyriako"
       permission: "admin"
-    - username: "tischrei"
-      permission: "admin"
   branch_protections:
     - branch: "main"
       template: "github-actions"
