@@ -19,6 +19,8 @@ docs-next-charts:
       permission: "admin"
     - username: "tischrei"
       permission: "admin"
+    - username: "otcbot"
+      permission: "admin"
   branch_protections:
     - branch: "main"
       template: "github-actions"
