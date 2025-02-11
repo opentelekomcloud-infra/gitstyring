@@ -3,7 +3,7 @@ data-admin-service:
   allow_rebase_merge: false
   allow_squash_merge: true
   allow_update_branch: true
-  archived: true
+  archived: false
   branch_protections:
   - branch: main
     template: zuul
