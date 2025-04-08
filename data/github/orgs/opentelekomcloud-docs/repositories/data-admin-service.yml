@@ -1,3 +1,4 @@
+---
 data-admin-service:
   allow_merge_commit: false
   allow_rebase_merge: false
@@ -9,11 +10,11 @@ data-admin-service:
     template: zuul
   default_branch: main
   delete_branch_on_merge: true
-  description: Open Telekom Cloud Data Admin Service docs
+  description: data-admin-service
   has_issues: true
   has_projects: false
   has_wiki: false
   homepage: null
   teams:
   - permission: push
-    slug: docs-database-rw
+    slug: eco
