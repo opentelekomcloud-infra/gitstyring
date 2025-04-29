@@ -1,0 +1,22 @@
+---
+opentelekomcloud-functiongraph-java:
+  default_branch: main
+  description: "Open Telekom Cloud FunctionGraph runtime libraries for Java"
+  homepage: null
+  archived: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  delete_branch_on_merge: true
+  allow_merge_commit: true
+  allow_squash_merge: true
+  allow_rebase_merge: true
+  teams:
+    - slug: "paas-rw"
+      permission: "push"
+  collaborators:
+    - username: "ssimeth-tsi"
+      permission: "admin"
+  branch_protections:
+    - branch: "main"
+      template: "github-actions"
