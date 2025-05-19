@@ -17,6 +17,10 @@ opentelekomcloud-functiongraph-java:
   collaborators:
     - username: "ssimeth-tsi"
       permission: "admin"
+    - username: "sebastiangode"
+      permission: "admin"
+    - username: "tischrei"
+      permission: "admin"
   branch_protections:
     - branch: "main"
       template: "github-actions"
