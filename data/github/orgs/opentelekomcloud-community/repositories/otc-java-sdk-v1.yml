@@ -21,7 +21,3 @@ otc-java-sdk-v1:
       permission: "admin"
     - username: "harald-tsys"
       permission: "admin"
-    - username: "sebastiangode"
-      permission: "admin"
-    - username: "tischrei"
-      permission: "admin"
