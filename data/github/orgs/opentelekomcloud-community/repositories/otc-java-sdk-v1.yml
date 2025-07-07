@@ -14,8 +14,6 @@ otc-java-sdk-v1:
   teams:
     - slug: "eco"
       permission: "push"
-    - slug: "otc-community"
-      permission: "push"
   collaborators:
     - username: "ssimeth-tsi"
       permission: "admin"
