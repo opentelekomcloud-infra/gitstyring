@@ -14,17 +14,8 @@ otc-java-sdk-v1:
   teams:
     - slug: "eco"
       permission: "push"
-    - slug: "otc-community"
-      permission: "push"
   collaborators:
     - username: "ssimeth-tsi"
       permission: "admin"
     - username: "harald-tsys"
       permission: "admin"
-    - username: "sebastiangode"
-      permission: "admin"
-    - username: "tischrei"
-      permission: "admin"
-  branch_protections:
-    - branch: "main"
-      template: "zuul"
