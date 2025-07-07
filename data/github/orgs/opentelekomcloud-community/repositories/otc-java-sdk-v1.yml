@@ -25,6 +25,3 @@ otc-java-sdk-v1:
       permission: "admin"
     - username: "tischrei"
       permission: "admin"
-  branch_protections:
-    - branch: "main"
-      template: "zuul"
