@@ -16,5 +16,5 @@ github-actions:
   has_wiki: false
   homepage: null
   teams:
-  - permission: push
-    slug: eco
+    - permission: push
+      slug: eco
