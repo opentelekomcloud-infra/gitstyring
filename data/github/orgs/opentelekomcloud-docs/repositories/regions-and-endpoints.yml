@@ -18,3 +18,5 @@ regions-and-endpoints:
   teams:
   - permission: push
     slug: docs-eco-rw
+  - permission: push
+    slug: docs-qa
