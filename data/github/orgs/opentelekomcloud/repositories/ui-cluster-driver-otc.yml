@@ -3,7 +3,7 @@ ui-cluster-driver-otc:
   default_branch: devel
   description: Rancher UI plugin for OpenTelekomCloud CCE cluster driver
   homepage: null
-  archived: false
+  archived: true
   has_issues: true
   has_projects: false
   has_wiki: false
