@@ -15,6 +15,8 @@ cloud-provider-opentelekomcloud:
   teams:
     - slug: "eco"
       permission: "push"
+    - slug: "contributors"
+      permission: "push"
   branch_protections:
     - branch: "master"
       template: "no_zuul"
