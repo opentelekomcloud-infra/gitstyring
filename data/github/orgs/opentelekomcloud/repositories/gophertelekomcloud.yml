@@ -16,6 +16,8 @@ gophertelekomcloud:
       permission: "push"
     - slug: "gophers"
       permission: "push"
+    - slug: "contributors"
+      permission: "push"
   branch_protections:
     - branch: "devel"
       template: "github-actions"
