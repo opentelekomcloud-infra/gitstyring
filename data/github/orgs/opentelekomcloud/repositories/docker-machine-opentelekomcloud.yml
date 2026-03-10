@@ -1,7 +1,7 @@
 ---
 docker-machine-opentelekomcloud:
   default_branch: devel
-  description: OpenTelekomCloud driver for docker-machine (new)
+  description: T Cloud Public driver for docker-machine (new)
   homepage: null
   archived: false
   has_issues: true

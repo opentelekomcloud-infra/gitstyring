@@ -1,7 +1,7 @@
 ---
 kontainer-engine-driver-otc:
   default_branch: master
-  description: Rancher container engine driver for OTC
+  description: Rancher container engine driver for T Cloud Public (OpenTelekomCloud)
   homepage: null
   archived: false
   has_issues: true

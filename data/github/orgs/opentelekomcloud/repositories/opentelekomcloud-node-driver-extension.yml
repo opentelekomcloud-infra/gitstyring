@@ -1,7 +1,7 @@
 ---
 opentelekomcloud-node-driver-extension:
   default_branch: main
-  description: RKE2 Driver Extension for Rancher
+  description: T Cloud Public (OpenTelekomCloud) RKE2 Driver Extension for Rancher
   homepage: null
   archived: false
   has_issues: true

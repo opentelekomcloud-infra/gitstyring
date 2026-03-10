@@ -1,7 +1,7 @@
 ---
 terraform-opentelekomcloud-project-factory:
   default_branch: main
-  description: This repository for specific OpenTelekomCloud terraform modules which can helps to create standalone Project.
+  description: This repository for specific T Cloud Public (OpenTelekomCloud) terraform modules which can helps to create standalone Project.
   homepage: https://registry.terraform.io/namespaces/opentelekomcloud
   archived: false
   has_issues: true

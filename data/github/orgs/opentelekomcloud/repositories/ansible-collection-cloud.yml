@@ -1,7 +1,7 @@
 ---
 ansible-collection-cloud:
   default_branch: main
-  description: "Ansible modules for using with OTC
+  description: "Ansible modules for using with T Cloud Public
     (addition to the native OpenStack modules)"
   homepage: null
   archived: false

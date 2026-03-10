@@ -1,7 +1,7 @@
 ---
 gophertelekomcloud:
   default_branch: devel
-  description: GopherTelekomCloud is an OpenTelekomCloud clouds Go SDK
+  description: GopherTelekomCloud is an T Cloud Public (OpenTelekomCloud) clouds Go SDK
   homepage: null
   archived: false
   has_issues: true

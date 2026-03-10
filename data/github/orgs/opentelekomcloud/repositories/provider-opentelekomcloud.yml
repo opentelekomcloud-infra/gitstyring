@@ -1,7 +1,7 @@
 ---
 provider-opentelekomcloud:
   default_branch: main
-  description: OTC crossplane provider
+  description: T Cloud Public (OpenTelekomCloud) crossplane provider
   homepage: null
   archived: false
   has_issues: true
