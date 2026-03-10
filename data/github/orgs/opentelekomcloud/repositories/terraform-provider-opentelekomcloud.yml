@@ -1,7 +1,7 @@
 ---
 terraform-provider-opentelekomcloud:
   default_branch: devel
-  description: Terraform OpenTelekomCloud provider
+  description: Terraform T Cloud Public (OpenTelekomCloud) provider
   homepage: https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest
   archived: false
   has_issues: true

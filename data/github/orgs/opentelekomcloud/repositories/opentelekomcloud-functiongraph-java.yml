@@ -1,7 +1,7 @@
 ---
 opentelekomcloud-functiongraph-java:
   default_branch: main
-  description: "Open Telekom Cloud FunctionGraph runtime libraries for Java"
+  description: "T Cloud Public (OpenTelekomCloud) FunctionGraph runtime libraries for Java"
   homepage: null
   archived: false
   has_issues: true

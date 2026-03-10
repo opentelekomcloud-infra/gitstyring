@@ -1,7 +1,7 @@
 ---
 python-giteaclient:
   default_branch: main
-  description: python-giteaclient template for an Open Telekom Cloud project
+  description: python-giteaclient template for an T Cloud Public (OpenTelekomCloud) project
   homepage: null
   archived: false
   has_issues: true

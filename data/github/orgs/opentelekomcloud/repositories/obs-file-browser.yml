@@ -2,7 +2,7 @@
 obs-file-browser:
   default_branch: master
   description: "A prettier index.html for listing public files and folders
-    in Open Telekom Cloud OBS buckets"
+    in T Cloud Public (OpenTelekomCloud) OBS buckets"
   homepage: null
   archived: false
   has_issues: true
