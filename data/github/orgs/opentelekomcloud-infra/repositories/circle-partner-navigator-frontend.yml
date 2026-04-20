@@ -17,3 +17,5 @@ circle-partner-navigator-frontend:
   branch_protections:
     - branch: "main"
       template: "zuul"
+    - branch: "preprod"
+      template: "github-actions"
