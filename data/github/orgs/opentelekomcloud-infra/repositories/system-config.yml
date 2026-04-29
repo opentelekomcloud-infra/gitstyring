@@ -17,3 +17,5 @@ system-config:
   branch_protections:
     - branch: "main"
       template: "zuul"
+    - branch: "preprod"
+      template: "zuul"
