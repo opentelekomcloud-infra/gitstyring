@@ -3,7 +3,7 @@ octavia-proxy:
   default_branch: main
   description: Open Telekom Cloud Octavia Proxy
   homepage: null
-  archived: false
+  archived: true
   has_issues: true
   has_projects: false
   has_wiki: false
