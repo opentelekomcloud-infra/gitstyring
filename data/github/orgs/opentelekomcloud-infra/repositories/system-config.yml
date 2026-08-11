@@ -15,6 +15,13 @@ system-config:
   teams:
     - slug: "eco"
       permission: "push"
-  branch_protections:
-    - branch: "main"
-      template: "zuul"
+  # No branch_protections while this repository is private. The organisation is
+  # on the GitHub Free plan, where branch protection is unavailable for private
+  # repositories, so GitHub answers the branch-protection API with
+  #   403 "Upgrade to GitHub Pro or make this repository public to enable this
+  #   feature."
+  # for every caller, org admins included. gitcontrol could therefore neither
+  # read nor apply them, and the whole gitstyring run failed on this one repo
+  # (ok=1097 changed=10 failed=1). zuul-infra, also private, is declared the
+  # same way. Restore this block if the repo becomes public or the plan is
+  # upgraded.
