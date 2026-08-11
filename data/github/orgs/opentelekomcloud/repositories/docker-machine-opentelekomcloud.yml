@@ -20,4 +20,4 @@ docker-machine-opentelekomcloud:
       permission: "push"
   branch_protections:
     - branch: "devel"
-      template: "zuul"
+      template: "zuul-new-prod"

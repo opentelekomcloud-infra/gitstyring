@@ -18,4 +18,4 @@ otcdocstheme:
     - branch: "main"
       template: "zuul-new-prod"
     - branch: "legacy"
-      template: "zuul"
+      template: "zuul-new-prod"

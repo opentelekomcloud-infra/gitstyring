@@ -6,7 +6,7 @@ elastic-load-balancing:
   archived: false
   branch_protections:
   - branch: main
-    template: zuul
+    template: zuul-new-prod
   default_branch: main
   delete_branch_on_merge: true
   description: Open Telekom Cloud Elastic Load Balancing docs
