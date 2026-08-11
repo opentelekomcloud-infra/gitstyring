@@ -6,7 +6,7 @@ software-repository-container:
   archived: false
   branch_protections:
   - branch: main
-    template: zuul
+    template: zuul-new-prod
   default_branch: main
   delete_branch_on_merge: true
   description: Open Telekom Cloud Software Repository for Containers docs

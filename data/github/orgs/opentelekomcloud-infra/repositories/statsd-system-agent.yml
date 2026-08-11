@@ -16,4 +16,4 @@ statsd-system-agent:
       permission: "push"
   branch_protections:
     - branch: "main"
-      template: "zuul"
+      template: "zuul-new-prod"

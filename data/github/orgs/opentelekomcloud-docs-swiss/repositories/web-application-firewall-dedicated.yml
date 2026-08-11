@@ -6,7 +6,7 @@ web-application-firewall-dedicated:
   archived: false
   branch_protections:
   - branch: main
-    template: zuul
+    template: zuul-new-prod
   default_branch: main
   delete_branch_on_merge: true
   description: Open Telekom Cloud Dedicated Web Application Firewall docs

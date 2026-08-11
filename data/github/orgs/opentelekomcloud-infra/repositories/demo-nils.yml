@@ -7,7 +7,7 @@ demo-nils:
   archived: false
   branch_protections:
   - branch: main
-    template: zuul
+    template: zuul-new-prod
   default_branch: main
   delete_branch_on_merge: true
   description: A place to do repo-based testing of all kinds. Will be deleted soon.

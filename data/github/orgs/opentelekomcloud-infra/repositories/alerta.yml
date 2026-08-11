@@ -16,4 +16,4 @@ alerta:
       permission: "push"
   branch_protections:
     - branch: "master"
-      template: "zuul"
+      template: "zuul-new-prod"

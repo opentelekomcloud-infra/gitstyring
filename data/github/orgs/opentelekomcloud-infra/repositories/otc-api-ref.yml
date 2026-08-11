@@ -17,4 +17,4 @@ otc-api-ref:
   collaborators: []
   branch_protections:
     - branch: "main"
-      template: "zuul"
+      template: "zuul-new-prod"

@@ -16,4 +16,4 @@ cloudmon-plugin-smtp:
       permission: "push"
   branch_protections:
     - branch: "main"
-      template: "zuul"
+      template: "zuul-new-prod"
