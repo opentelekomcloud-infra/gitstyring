@@ -6,15 +6,18 @@ Offline checks (always run):
 * a repository file describes exactly one repository
 * the file name matches the repository key, so a repository is easy to find
   and a typo in the file name cannot hide a definition
-* ``private`` and ``visibility`` do not contradict each other
+* a private repository declares both ``private: true`` and
+  ``visibility: private``, and neither contradicts the other
 
 Online check (only when GITHUB_TOKEN is set):
 
-* a repository that is private on GitHub declares ``private: true``
+* a repository that is private on GitHub declares both keys
 
 The online check guards the case that made a private repository public: an
 undeclared attribute is not managed, so the repository silently depends on
-whatever the tooling defaults to instead of on this data.
+whatever the tooling defaults to instead of on this data. ``visibility`` is
+sent alongside ``private`` and overrides it, so a lone ``private: true`` is
+not enough.
 """
 
 import argparse
@@ -66,11 +69,18 @@ def check_offline(root):
 
         private = config.get("private")
         visibility = config.get("visibility")
-        if private is not None and visibility is not None:
-            if (visibility == "private") is not bool(private):
-                errors.append(
-                    f"{path}: private={private} contradicts "
-                    f"visibility={visibility!r}")
+        wants_private = private is True or visibility == "private"
+        declared_both = private is True and visibility == "private"
+        if wants_private and not declared_both:
+            errors.append(
+                f"{path}: a private repository must declare both "
+                f"'private: true' and 'visibility: private'; got "
+                f"private={private!r} visibility={visibility!r}")
+        elif private is False and visibility not in (None, "public",
+                                                     "internal"):
+            errors.append(
+                f"{path}: private=false contradicts "
+                f"visibility={visibility!r}")
     return errors
 
 
@@ -114,10 +124,12 @@ def check_online(root, token):
         private_repos = seen[org]
         if private_repos is None or repo not in private_repos:
             continue
-        if config.get("private") is not True:
+        declared_both = config.get("private") is True
+        declared_both &= config.get("visibility") == "private"
+        if not declared_both:
             errors.append(
                 f"{path}: {org}/{repo} is private on GitHub but does not "
-                f"declare 'private: true'")
+                f"declare both 'private: true' and 'visibility: private'")
     return errors
 
 
