@@ -3,7 +3,8 @@
   default_branch: main
   description: Meta description of the organization
   homepage: null
-  archived: true
+  # Holds the organization community health files, so it must stay writable.
+  archived: false
   has_issues: true
   has_projects: false
   has_wiki: false
