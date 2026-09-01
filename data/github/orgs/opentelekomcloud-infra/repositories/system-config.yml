@@ -1,0 +1,29 @@
+---
+# No branch_protections are declared for this repository. The organisation is on
+# the GitHub Free plan and this repo is private, so branch protection is
+# unavailable: GitHub answers the branch-protection API with
+#   403 "Upgrade to GitHub Pro or make this repository public to enable this
+#   feature."
+# for every caller, org admins included. gitcontrol can therefore neither read
+# nor apply them, and the whole gitstyring run failed on this single repo
+# (ok=1097 changed=10 failed=1). zuul-infra, also private, is declared the same
+# way. Restore the block if this repo becomes public or the plan is upgraded.
+system-config:
+  default_branch: main
+  description: System config for the Ecosystem infrastructure
+  homepage: null
+  archived: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  allow_squash_merge: true
+  allow_rebase_merge: false
+  # Must stay declared. Every attribute that is not declared here is not
+  # managed, and an undeclared attribute used to be replaced by the module
+  # default and pushed to the API, which is what turned this repository public.
+  private: true
+  teams:
+    - slug: "eco"
+      permission: "push"
