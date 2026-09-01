@@ -20,10 +20,11 @@ system-config:
   allow_merge_commit: false
   allow_squash_merge: true
   allow_rebase_merge: false
-  # Must stay declared. Every attribute that is not declared here is not
-  # managed, and an undeclared attribute used to be replaced by the module
-  # default and pushed to the API, which is what turned this repository public.
+  # Both keys are required. gitcontrol sends `visibility` as well, and a
+  # `private: true` on its own was overridden by it, which is how this
+  # repository kept reverting to public.
   private: true
+  visibility: private
   teams:
     - slug: "eco"
       permission: "push"
