@@ -1,7 +1,7 @@
 ---
 status-dashboard:
   default_branch: main
-  description: CloudMon Status Dashboard with Flask
+  description: Status Dashboard Backend
   homepage: null
   archived: false
   has_issues: true
@@ -16,4 +16,4 @@ status-dashboard:
       permission: "push"
   branch_protections:
     - branch: "main"
-      template: "zuul-new-prod"
+      template: "github-actions"
