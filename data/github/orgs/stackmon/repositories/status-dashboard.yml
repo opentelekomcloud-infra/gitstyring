@@ -1,7 +1,7 @@
 ---
 status-dashboard:
   default_branch: main
-  description: CloudMon Status Dashboard
+  description: Status Dashboard Backend
   homepage: null
   archived: false
   has_issues: true
