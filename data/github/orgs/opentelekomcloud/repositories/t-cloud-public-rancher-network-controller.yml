@@ -19,5 +19,5 @@ t-cloud-public-rancher-network-controller:
     - slug: "contributors"
       permission: "push"
   branch_protections:
-    - branch: "devel"
+    - branch: "main"
       template: "github-actions"
