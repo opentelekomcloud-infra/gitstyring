@@ -3,27 +3,29 @@
     name: zuul_eco_gitcontrol_vault
     data:
       vault_role_id: !encrypted/pkcs1-oaep
-        - HTfexJfheN+aFPwMKv5CePvpRBK71kYojpYHaA4nV3NiPSYhIG6ESPolLN0HNSH8wQOeY
-          0GKJtSnb9at0hVGxbbTl5izZ5XT7+eB9aHPAdlsGYPzhrnFPbnFEEaGRdLezouK9gZieX
-          rw2N/k8w1g3zhW6fp2OQhbA08jtCR+qCi/NbgQHpjlto8YoBaqfF4yP6jU4+mV9wGJstF
-          pcFJ6qPr8SUkFUL7rvqSUWW6zpyWth80WNZKva8QtM9hPO6JgoIH952LVLbmWts4GsWmT
-          3XsY8ZPKyyj1ouYNqE0EttGzijmQM6eQpNqVO6HuHc37XthkbBYMQUFhWZXFWK9CQkdu8
-          AT33hMKgzT86NmFuGQGOy2Tz0+7sp844M3Jn6NTz5ScUUovrM7mSAN+Y2yPa1YqTLeQZZ
-          6ML4M7BBBMJAqHvaHQL92MRvSmdkrJe+CwJ4aPoRW4LRxAqFjhywcZnKjbYs+/+vJzAa5
-          8W6j7MaNp4o3KNLXMGhjmxHgc4oQx0xL7NUN4kNL7M7+4VVCvo6A9ICXJIBpvQdjXonNI
-          MWHbdUF9O97V0ldY9kAjn8VWBZvx7TUFNuCHHfP7zlhltMJS+x5Cbv0NOm+FwmzFy7ujQ
-          XDnf9mzfzcvHQA10pqdpeqNKLXjT7O3zYfNnkyUsIitHh9bX+2o/zFjQbwdQhA=
+        - pSTKvFLPc/KDepuOm56UK6lP/ZPNLVaGeI284RdPCGabtLYdUOVbKai4LbyK5tNIdNBt
+          fJpd0Bo7w6iVSOiczllOc5TEpNTZ6Ot1vrucCbFlhXgkTVC4cIx0BjUoYUxnjmi+pH50
+          1L7baHi5uXQ/rv6NAHlV33ARCEr/VPCkI7wVxNI6Kh+yMaJ2YxUW4dAUdCdg11qu9Y6I
+          3TiNLw7v+lQRNXHfVlYCJFP7pJStq8CFKFF+ty0/+gcvzRYmnCGKGayoE4g/KMga715d
+          O3+drBBBknNitAG94jcJrWa8np/LmnkjDkfY9FDubUXYVH5hDoFH4ZlofWw4Xp7zKh3J
+          r9CJA9m7l/8YncBe/U9Cq9IIuphkIPfndyKEj4f0u/gdghloPmcPUJPzzHpqBKTaYGKS
+          q45pmg4nl16bEE7VNZT8TwEK2U/xL/MjoRJ/R7dHaA7Cx7lhlX1+met80QQb2uw16+dw
+          8J5RHZbyNYlBY3/uYebVVM1A2nKP9j7LUa67m7djJO13dV9p+CkJptjnAb6KJar/nSKn
+          Gq6WpUf5PK+bzTslhfaN4lG7Wci9TBboAxIQSIRAnHSHQrucinhh9gX6nPRHGRoLQ1eE
+          PqZQw+4H6n0HtxLVMKEve/IPGUDxd+ACdLzSG2xLFp/NDdAjaWOGGpjDMuJ70J2hcuhW
+          EO4=
       vault_token_path: !encrypted/pkcs1-oaep
-        - VDMbPbqjBP5da0U1WVH5Q9kC9ZCr5pyG1XUe5QjKTlFDgyT/s5xofwjg0xYtzpw1ZJopH
-          +Cz/8r4zjlQJeyITbkxVKKe3PeQRQD5mpCGxbRpWdfrqUIc7YqHDguM08FywqyZQ2+1+8
-          hchT/SCAQsgCZIwzqx8e0sMKYRS6yZV4NV4ybAJlYh26lIOaCLCy6yCba6Q7127wVGes+
-          mDu2etXqcr4RwzeAvSzGu/8t6bAXSvirMor2Kjgb6a2eI1Hlgf0taV3OG4q+o/46HIF4Q
-          CS1EZ0+iSCyEvV3JzHD09pdA4dF10l1LHkKF3zVaySgWE0gjfGFoIECqzyu1JuBgCoHoi
-          ZbokpCtdyHFfBEzQnMWjyJ36tVQsESTo0PynFzU3XjESZ5ng2Y9/fNTqVDtSjYdmMQhww
-          77sWwki15yXkkvU6G4sFwRFMsdx2dNqVJnwVA7OIrL0NrYP/fTaoHxbpQ9iR1+SV6uIZE
-          ulzVbB8fz14wQlC6hH/EsxMn0kvHJt+kwAfFtg3DSBiAY+MmLTUl1O1JlBSTJSeJt+G5K
-          aeyat7W3jLel/PR7MkPVXlM6LJoRkOpm1fJ+jFbLoQ3FZ7JJZb1/SPVkfPJ1WxN9lYyNZ
-          E4ThIH78dyuEG7IORCrrewLsltLvQrFNeAhQJjW2lXlx8CRgeWhNaJM9K35v/c=
+        - Po9tBrtYjkLuNFko9OQi4au5FeD1txJvOSVp2rjMTFLn4UDfR8Q2YVgE1PNTemz10HZs
+          gL5UXy2YGZA9VG/rLNKhQ0WmKUSomsC/d0P5jUZdTdx49z6MWEI3NFhpBw50AEcRk2GZ
+          QVtsf7L0pU063erMx+Z3E6VhesOOThFMRAjs0Kp/8PFlw60eaJC413uEnbwXpoZJwmMR
+          Ndv1lSA27bXRPmbI3FzVNvXQQRNnXqAzUWYXJAOBpkO0HNyGWKTfwbZbIZKwrkhuUuMV
+          9bgnK5sTbLodcck3KJ13No3BhZ4RB1eNDC12xA/rL5j5rdZ8mXqm8ietj5kAXAO6NAbM
+          GiBq6G5lSO7r6PGB46RvRCPlzuhhbMFZGoBspdy0OS/dqbA9DswNBLDH43m7imJGdzuF
+          +aJIJ0oCcv7B/BjgwYg4Ka3YDKgVsjECoVU+V1Rm7TjjpIhh6qNtZPYpr5gJTUoq3vFW
+          E3N1sYGfwUZ/I4f1RC+IAklPS/UlR+S0X83M/ajv0BwoH9R4FrJ5hoNGbDs8h+VM/CVq
+          OuwdliWPbHTVfyqZgkhbr7wIa6Twk6sQrKiHaSkCBI2B7TS7aT1h7NbnAYsPzouUmhFz
+          0s1FCCd8na6OuUJeSDi/+1VvsONKHOCmWZBR6biLGL+QKxF3U/hAWRisYYztlLLqoSdc
+          pKQ=
 
 - job:
     name: gitcontrol-apply-gh
