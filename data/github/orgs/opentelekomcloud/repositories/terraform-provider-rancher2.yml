@@ -6,9 +6,9 @@ terraform-provider-rancher2:
   allow_update_branch: true
   archived: false
   branch_protections:
-  - branch: master
+  - branch: main
     template: zuul-new-prod
-  default_branch: master
+  default_branch: main
   delete_branch_on_merge: true
   description: Terraform Rancher2 provider fork
   has_issues: true
