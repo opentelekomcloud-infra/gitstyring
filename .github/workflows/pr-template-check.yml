@@ -1,0 +1,49 @@
+name: PR template check
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  template:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check required PR template sections
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Same rules as Giji's parse_pr_body / missing_sections:
+            // "## <Title>:" heading, text until the next "## " heading,
+            // HTML comments removed, at least 3 characters of content.
+            const REQUIRED = {
+              'Summary': 'Summary',
+              'Description': 'Description',
+              'Risk of Implementation': 'Risk of Implementation',
+              'Risk of Omission': 'Risk of Omission',
+            };
+            const MIN_LEN = 3;
+
+            const body = (context.payload.pull_request.body || '').replace(/\r\n/g, '\n');
+            const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+            const missing = [];
+            for (const title of Object.values(REQUIRED)) {
+              const re = new RegExp(`## ${escape(title)}:\\s*\\n([\\s\\S]*?)(?=\\n## |$(?![\\s\\S]))`);
+              const m = body.match(re);
+              const value = m ? m[1].replace(/<!--[\s\S]*?-->/g, '').trim() : '';
+              if (value.length < MIN_LEN) missing.push(title);
+            }
+
+            if (missing.length) {
+              core.setFailed(
+                `PR template incomplete. Empty or missing sections: ${missing.join(', ')}.\n` +
+                `Use the headings from .github/pull_request_template.md exactly ("## Summary:" etc.) ` +
+                `and write real text under each of them.`);
+            } else {
+              core.info('All required PR template sections are filled.');
+            }
